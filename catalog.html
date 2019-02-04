@@ -5,9 +5,9 @@
     <title></title>
   </head>
   <body>
-    <header class="catalog__header">
-      <div class="catalog__navigation">
-        <a href="index.html" class="catalog__navigation-logo">
+    <header class="header">
+      <div class="navigation">
+        <a href="index.html" class="navigation-logo">
           <svg xmlns="http://www.w3.org/2000/svg" width="163" height="35" viewBox="0 0 163 35">
             <defs>
                 <style>
@@ -18,7 +18,7 @@
           </svg>
           DEVICE
         </a>
-        <a href="profile.html" class="catalog__navigation-profile">
+        <a href="profile.html" class="navigation-profile">
           <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
              width="13px" height="12px" viewBox="0 0 13 12" enable-background="new 0 0 13 12" xml:space="preserve">
             <path fill="#272525" d="M0.032,12h12.937c-0.163-2.643-2.074-4.837-4.671-5.543C9.306,5.846,9.985,4.75,9.985,3.485
@@ -26,10 +26,10 @@
           </svg>
           Валентин Петухов
         </a>
-        <a href="#"  class="catalog__navigation-out">
+        <a href="#"  class="navigation-out">
         Выйти
         </a>
-        <section class="catalog__navigation-features">
+        <section class="navigation-features">
           <a href="compare.html">
             <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                  width="10px" height="10px" viewBox="0 0 10 10" enable-background="new 0 0 10 10" xml:space="preserve">
@@ -55,94 +55,96 @@
             Корзина
           </a>
         </section>
-        <a href="#" class="catalog__navigation-catalog">
+        <a href="#" class="navigation-catalog">
           Каталог товаров
           <img src="img/plus.png" width="16" height="16" alt="Иконка плюс">
         </a>
-        <ul class="catalog__navigation-services">
+        <ul class="avigation-services">
           <li><a href="delivery.html">Доставка</a></li>
           <li><a href="assurance.html">Гарантия</a></li>
           <li><a href="contacts.html">Контакты</a></li>
         </ul>
       </div>
     </header>
-    <main class="catalog__container">
-      <h1 class="catalog__container-title">Моноподы для селфи</h1>
-      <ul class="catalog__breadcrumbs">
+    <main class="container">
+      <h1 class="container-title">Моноподы для селфи</h1>
+      <ul class="breadcrumbs">
         <li><a href="index.html">Гравная</a></li>
         <li><a href="catalog.html">Каталог товаров</a></li>
-        <li class="catalog__breadcrumbs-current">
+        <li class="breadcrumbs-current">
           <a>Моноподы для селфи</a>
         </li>
       </ul>
-      <section class="catalog__filters">
+      <section class="filters">
         <h2 class="visually-hidden">Фильтры товаров</h2>
         <!-- Форма -->
-        <div class="catalog__filters-cost">
-          <label for="cost">Стоимость</label>
-          <input type="range" min="0" max="10000">
-        </div>
-        <div class="catalog__filters-color">
-          <p>Цвет</p>
-          <ul>
-            <li>
-              <label class="catalog__filters-color-checkbox">
-                <input type="checkbox" name="black" checked>
-                Черный
-              </label>
-            </li>
-            <li>
-              <label class="catalog__filters-color-checkbox">
-                <input type="checkbox" name="white">
-                Белый
-              </label>              
-            </li>
-            <li>
-              <label class="catalog__filters-color-checkbox">
-                <input type="checkbox" name="blue" checked>
-                Синий
-              </label>              
-            </li>
-            <li>
-              <label class="catalog__filters-color-checkbox">
-                <input type="checkbox" name="red" checked>
-                Красный
-              </label>              
-            </li>
-            <li>
-              <label class="catalog__filters-color-checkbox">
-                <input type="checkbox" name="pink">
-                Розовый
-              </label>              
-            </li>                         
-          </ul>
-        </div>
-        <div class="catalog__filters-bluetooth">
-          <p>Bluetooth</p>
-          <ul>
-            <li>
-              <label class="catalog__filters-bluetooth-radio">
-                <input type="radio" name="bluetooth" value="Yes" checked>
-                Есть
-              </label>
-            </li>
-            <li>
-              <label class="catalog__filters-bluetooth-radio">
-                <input type="radio" name="bluetooth" value="No">
-                Нет
-              </label>
-            </li>            
-          </ul>
-        </div>
-        <button class="catalog__filters-button-display" type="button">
-          Показать
-        </button>
+        <form action="https://echo.htmlacademy.ru" class="filters-form" method="post">
+          <div class="filters-cost">
+            <label for="cost">Стоимость</label>
+            <input type="range" min="0" max="10000">
+          </div>
+          <fieldset class="filters-color">
+            <legend>Цвет</legend>
+            <ul>
+              <li>
+                <label class="catalog__filters-color-checkbox">
+                  <input type="checkbox" name="black" checked>
+                  Черный
+                </label>
+              </li>
+              <li>
+                <label class="catalog__filters-color-checkbox">
+                  <input type="checkbox" name="white">
+                  Белый
+                </label>              
+              </li>
+              <li>
+                <label class="catalog__filters-color-checkbox">
+                  <input type="checkbox" name="blue" checked>
+                  Синий
+                </label>              
+              </li>
+              <li>
+                <label class="catalog__filters-color-checkbox">
+                  <input type="checkbox" name="red" checked>
+                  Красный
+                </label>              
+              </li>
+              <li>
+                <label class="catalog__filters-color-checkbox">
+                  <input type="checkbox" name="pink">
+                  Розовый
+                </label>              
+              </li>                         
+            </ul>
+          </fieldset>
+          <fieldset class="filters-bluetooth">
+            <legend>Bluetooth</legend>
+            <ul>
+              <li>
+                <label class="catalog__filters-bluetooth-radio">
+                  <input type="radio" name="bluetooth" value="Yes" checked>
+                  Есть
+                </label>
+              </li>
+              <li>
+                <label class="catalog__filters-bluetooth-radio">
+                  <input type="radio" name="bluetooth" value="No">
+                  Нет
+                </label>
+              </li>            
+            </ul>
+          </fieldset>
+          <button class="filters-button-display" type="button">
+            Показать
+          </button>
+        </form>
       </section>
       <section class="catalog">
         <h2 class="visually-hidden">Селфи-палки</h2>
-        <ul class="catalog__list">
-          <li class="catalog__item">
-            <article class="catalog__item-article">
+        <ul class="catalog-list">
+          <li class="catalog-item">
+            <article class="catalog-item-article">
               <h1>
                 <a href="catalog-item.html">Любительская селфи-палка</a>
               </h1>
@@ -153,7 +155,7 @@
             </article>
           </li>
           <li class="catalog-item">
-            <article class="catalog__item-article">
+            <article class="catalog-item-article">
               <h1>
                 <a href="catalog-item.html">Профессиональная селфи-палка</a>
               </h1>
@@ -164,7 +166,7 @@
             </article>
           </li>
           <li class="catalog-item">
-            <article class="catalog__item-article">
+            <article class="catalog-tem-article">
               <h1>
                 <a href="catalog-item.html">Непотопляемая селфи-палка</a>
               </h1>
@@ -186,11 +188,11 @@
             </article>
           </li>
         </ul>
-        <ul class="catalog__pagination-list">
+        <ul class="catalog-pagination-list">
         </ul>
       </section>
     </main>
-    <footer class="catalog__footer">
+    <footer class="footer">
       <a href="index.html" class="catalog__footer-logo">
         <svg xmlns="http://www.w3.org/2000/svg" width="163" height="35" viewBox="0 0 163 35">
             <defs>
@@ -202,19 +204,19 @@
         </svg>
         DEVICE
       </a>
-      <div class="catalog__footer-address">
+      <div class="footer-address">
         <address>
           г. Москва, ул. Строителей, 15
         </address>
       </div>
-      <div class="catalog__footer-services">
+      <div class="footer-services">
         <ul>
           <li><a href="delivery.html">Доставка</a></li>
           <li><a href="assurance.html">Гарантия</a></li>
           <li><a href="contacts.html">Контакты</a></li>
         </ul>
       </div>
-      <a href="profile.html" class="catalog__footer-profile">
+      <a href="profile.html" class="footer-profile">
         <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
           width="13px" height="12px" viewBox="0 0 13 12" enable-background="new 0 0 13 12" xml:space="preserve">
           <path fill="#272525" d="M0.032,12h12.937c-0.163-2.643-2.074-4.837-4.671-5.543C9.306,5.846,9.985,4.75,9.985,3.485
@@ -222,10 +224,10 @@
         </svg>
         Валентин Петухов
       </a>
-      <a href="#" class="catalog__footer-out">
+      <a href="#" class="footer-out">
       Выйти
       </a>
-      <ul class="catalog__footer-features">
+      <ul class="footer-features">
         <li>
           <a href="compare.html">
             <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
@@ -255,10 +257,10 @@
           </a>
         </li>
       </ul>
-      <div class="catalog__footer-telephone">
+      <div class="footer-telephone">
         Тел.: <span property="telephone">+7(495)495-95-95</span>
       </div>
-      <div class="catalog__footer-social">
+      <div class="footer-social">
         <ul>
           <li>
             <a href="#" class="catalog__footer-social-button">
@@ -271,7 +273,7 @@
             </a>
           </li>
           <li>
-            <a href="#" class="catalog__footer-social-button">
+            <a href="#" class="footer-social-button">
               <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                 width="32px" height="32px" viewBox="0 0 32 32" enable-background="new 0 0 32 32" xml:space="preserve">
                 <g>
@@ -289,7 +291,7 @@
             </a>
           </li>
           <li>
-            <a href="#" class="catalog__footer-social-button">
+            <a href="#" class="footer-social-button">
               <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="32px"
                 height="32px" viewBox="0 0 32 32" enable-background="new 0 0 32 32" xml:space="preserve">
                 <g id="Layer_1">
@@ -309,7 +311,7 @@
           </li>
         </ul>
       </div>
-      <div class="catalog__footer-copyright">
+      <div class="footer-copyright">
         <a href="https://htmlacademy.ru" class="button">
           <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="26.943px" height="34.09px" viewBox="0 0 26.943 34.09" enable-background="new 0 0 26.943 34.09" xml:space="preserve">
             <path d="M13.62,0.017L13.472,0L0,1.412v24.661l13.473,8.017l13.43-7.99l0.042-0.025V1.412L13.62,0.017z M25.019,12.127L13.495,5.334 L13.494,5.23l-0.087,0.05l-0.088-0.056v0.109L1.925,12.118V3.147l11.548-1.212l11.547,1.212V12.127z M13.405,6.787L24.923,13.5 l-4.479,2.64l-7.093-4.221l-0.014,1.415l5.904,3.513l-0.86,0.507l-5.03-2.992l-0.014,1.415l3.827,2.275l-0.782,0.523l-3.031-1.787 l-0.014,1.413l1.853,1.091l-1.8,1.081L2.034,13.622L13.405,6.787z M1.925,15.127l11.411,6.791l0.016,1.044L5.41,18.234L5.395,19.65 l7.979,4.795l0.018,1.076l-7.973-4.74l-0.013,1.414l8.021,4.822l0.046,0.025l8.143-4.872l-0.011-5.177l3.415-2.036v10.021 L13.472,31.85L1.925,24.979V15.127z"/>
