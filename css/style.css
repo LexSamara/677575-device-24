@@ -4,7 +4,7 @@
     local("Gilroy Light"),
     url("gilroylight.woff") format("woff"),
     url("gilroylight.woff2") format("woff2");
-  font-weight: 400;
+    font-weight: 400;
 }
 
 @font-face {
@@ -13,7 +13,7 @@
     local("Gilroy ExtraBold"),
     url("gilroyextrabold.woff") format("woff"),
     url("gilroyextrabold.woff2") format("woff2");
-  font-weight: 700;
+    font-weight: 700;
 }
 
 @font-face {
@@ -22,7 +22,7 @@
     local("Open Sans"),
     url("opensans.woff") format("woff"),
     url("opensans.woff2") format("woff2");
-  font-weight: 400;
+    font-weight: 400;
 }
 
 @font-face {
@@ -31,11 +31,209 @@
     local("Open Sans Light"),
     url("opensanslight.woff") format("woff"),
     url("opensanslight.woff2") format("woff2");
-  font-weight: 300;
+    font-weight: 300;
 }
 
 body {
+  margin: 0;
   font-family: "Gilroy", "Arial", sans-serif;
   font-weight: 400;
+  color: #000000;
 }
+
+/*img {max-width: 100%;}*/
+
+a {
+  color: rgba(0,0,0,1);
+  text-decoration: none;
+}
+
+button {
+  padding: 0;
+  border: none;
+  font: inherit;
+  color: inherit;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.header {
+  background-color: #f7e296;
+}
+
+.navigation-features {
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 15px;
+  line-height: 30px;
+  list-style: none;
+}
+
+.navigation-features .profile:hover,
+.navigation-features .compare:hover,
+.navigation-features .basket:hover {
+  color: rgba(0,0,0,0.5);
+}
+
+.navigation-features .profile:active,
+.navigation-features .compare:active,
+.navigation-features .basket:active {
+  color: rgba(0,0,0,0.2);
+}
+
+.navigation-features .search,
+.navigation-features .profile-out {
+  color: rgba(0,0,0,0.2);
+}
+
+.navigation-features .search:hover,
+.navigation-services a:hover {
+  color: rgba(0,0,0,0.5);
+}
+
+
+.navigation-services {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 24px;
+  list-style: none;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+}
+
+.navigation-services a:active,
+.container-goods a:active {
+  color: rgba(0,0,0,0.2);
+}
+
+.container-goods li {
+  font-size: 18px;
+  line-height: 24px;
+  list-style: none;
+  font-weight: 700;
+}
+
+.container-services li {
+  list-style: none;
+}
+
+.container-services button:hover {
+  background-color: #f0c52e;
+}
+
+.container-services button:active {
+  background-color: #000000;
+  color: #f7e184
+}
+
+.container-suppliers li {
+  list-style: none;
+}
+
+.container-info h2,
+.container-contacts h2 {
+  font-size: 47px;
+  line-height: 48px;
+  font-weight: 700;
+}
+
+.container-info p,
+.container-contacts p {
+  font-size: 15px;
+  line-height: 30px;
+  color: #525252;
+}
+
+.container-info li {
+  font-size: 16px;
+  line-height: 40px;
+  font-weight: 700;
+  list-style-type: circle;
+}
+
+.container-info a,
+.container-contacts a.button,
+.modal-form-button-send {
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+}
+
+.footer {
+  background-color: #464646;
+}
+
+.footer-address p,
+.footer-telephone,
+.footer-telephone a {
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-weight: 300;
+  font-size: 15px;
+  font-style: normal;
+  line-height: 30px;
+  color: #ffffff;
+}
+
+.footer-services ul,
+.footer-social ul {
+  list-style: none;
+}
+
+.footer-services a {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 24px;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  color: rgba(255, 255, 255, 1.0);
+}
+
+.footer-features {
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 15px;
+  line-height: 36px;
+  list-style: none;
+}
+
+.footer-services a:hover {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.footer-features a {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.footer-features a:hover {
+  color: rgba(255, 255, 255, 1.0);
+}
+
+.footer-services a:active,
+.footer-features a:active {
+  color: rgba(255, 255, 255, 0.2);
+}
+
+.modal {
+  display: none;
+}
+
+.modal-form label {
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 700;
+}
+
+.modal-form input,
+.modal-form textarea {
+  background-color: #e5e5e5;
+}
+
+.modal-form placeholder {
+  color: #464646;
+}
+
 
