@@ -34,6 +34,25 @@
     font-weight: 300;
 }
 
+.visually-hidden {
+  position: absolute !important;
+  clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+  clip: rect(1px, 1px, 1px, 1px);
+  padding:0 !important;
+  border:0 !important;
+  height: 1px !important;
+  width: 1px !important;
+  overflow: hidden;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
 body {
   margin: 0;
   font-family: "Gilroy", "Arial", sans-serif;
@@ -41,7 +60,7 @@ body {
   color: #000000;
 }
 
-/*img {max-width: 100%;}*/
+img {max-width: 100%;}
 
 a {
   color: rgba(0,0,0,1);
@@ -60,7 +79,8 @@ button {
 /* Header */
 
 .header {
-  background-color: #f7e296;
+  /*background-color: #f7e296;*/
+  /*background-color: rgba(0, 255, 0, 1);*/
 }
 
 .navigation-features {
@@ -72,28 +92,9 @@ button {
   list-style: none;
 }
 
-.navigation-features .profile:hover,
-.navigation-features .compare:hover,
-.navigation-features .basket:hover {
-  color: rgba(0,0,0,0.5);
+.navigation-catalog img {
+  display: inline-block;
 }
-
-.navigation-features .profile:active,
-.navigation-features .compare:active,
-.navigation-features .basket:active {
-  color: rgba(0,0,0,0.2);
-}
-
-.navigation-features .search,
-.navigation-features .profile-out {
-  color: rgba(0,0,0,0.3);
-}
-
-.navigation-features .search:hover,
-.navigation-services a:hover {
-  color: rgba(0,0,0,0.5);
-}
-
 
 .navigation-services {
   font-weight: 700;
@@ -104,16 +105,35 @@ button {
   letter-spacing: 4px;
 }
 
+.navigation-features .search,
+.navigation-features .profile-out {
+  color: rgba(0,0,0,0.3);
+}
+
+.navigation-features .profile-in:hover,
+.navigation-features .profile-user-name:hover,
+.navigation-features .compare:hover,
+.navigation-features .basket:hover {
+  color: rgba(0,0,0,0.5);
+}
+
+.navigation-features .profile-in:active,
+.navigation-features .profile-user-name:active,
+.navigation-features .compare:active,
+.navigation-features .basket:active {
+  color: rgba(0,0,0,0.2);
+}
+
+.navigation-features .search:hover,
+.navigation-services a:hover {
+  color: rgba(0,0,0,0.5);
+}
+
 .navigation-services a:active {
   color: rgba(0,0,0,0.2);
 }
 
-
 /* main-container & catalog-container*/
-
-.container-goods a:active {
-  color: rgba(0,0,0,0.2);
-}
 
 .container h1 {
   font-size: 47px;
@@ -129,46 +149,6 @@ button {
   line-height: 24px;
   font-weight: 700;
   list-style: none;
-}
-
-/* Filters */
-
-.filters-cost label,
-.filters-color legend,
-.filters-bluetooth legend {
-  font-size: 18px;
-  line-height: 24px;
-  font-weight: 700;
-}
-
-.filters-form ul {
-  list-style: none;
-}
-
-.filters-color-checkbox,
-.filters-bluetooth-radio {
-  font-family: "Open Sans", "Arial", sans-serif;
-  font-weight: 300;
-  font-size: 14px;
-  line-height: 40px;
-  color: rgba(0, 0, 0, 1);
-}
-
-/* Items */
-
-.item-article span {
-  font-size: 16px;
-  line-height: 24px;
-  font-weight: 300;
-}
-
-.container-services button:hover {
-  background-color: #f0c52e;
-}
-
-.container-services button:active {
-  background-color: #000000;
-  color: #f7e184
 }
 
 .container-suppliers li {
@@ -196,6 +176,53 @@ button {
   list-style-type: circle;
 }
 
+.container-goods a:active {
+  color: rgba(0,0,0,0.2);
+}
+
+.container-services button:hover {
+  background-color: #f0c52e;
+}
+
+.container-services button:active {
+  background-color: #000000;
+  color: #f7e184;
+}
+
+/* Catalog-Filters */
+
+.filters-cost label,
+.filters-color legend,
+.filters-bluetooth legend {
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 700;
+}
+
+.filters-form ul {
+  list-style: none;
+}
+
+.filters-color-checkbox,
+.filters-bluetooth-radio {
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 40px;
+  color: rgba(0, 0, 0, 1);
+}
+
+/* Catalog-Items */
+
+.item-article span {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 300;
+}
+
+
+/* Button */
+
 .container-info a,
 .container-contacts a.button,
 .modal-form-button-send,
@@ -206,6 +233,8 @@ button {
   text-transform: uppercase;
   letter-spacing: 4px;
 }
+
+/* Footer */
 
 .footer {
   background-color: #464646;
@@ -266,6 +295,8 @@ button {
   color: rgba(255, 255, 255, 0.2);
 }
 
+/* Modal */
+
 .modal {
   display: none;
 }
@@ -286,3 +317,146 @@ button {
 }
 
 
+/* Сеточные стили */
+
+.background-pic {
+  position: absolute;
+  opacity: 0.4;
+  left: 230px;
+}
+
+.header {
+  margin-bottom: 10px;
+
+  /* Временно для сетки */
+  min-height: 190px;
+}
+
+.navigation {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 1440;
+
+}
+
+.navigation-logo {
+  width: 1440px;
+  min-height: 40px;
+  outline: 1px solid red;
+  position: absolute;
+}
+
+.navigation-logo > svg {
+  position: relative;
+  left: 200px;
+  top: 20px;
+}
+
+.navigation-features {
+  margin: 0;
+  padding: 0;
+  display: flex;
+
+  background-color: rgba(0, 50, 0, 1.0);
+  outline: 1px solid red;
+  width: 1160px;
+  margin: 0 auto;
+  flex-direction: row;
+  justify-content: space-around;
+  padding-top: 45px;
+  padding-bottom: 20px;
+
+}
+
+.navigation-features li:nth-child(1) {
+  /*margin-left: 100px;*/
+  outline: 1px solid blue;
+}
+
+
+
+
+
+
+
+.navigation-services {
+  margin: 0;
+  padding: 0;
+
+  /* Временно для сетки */
+  min-height: 70px;
+  background-color: rgba(0, 0, 50, 0.7);
+}
+
+.container {
+  margin: 0;
+  padding: 0;
+
+  /* Временно для сетки */
+  min-height: 180px;
+  background-color: rgba(50, 50, 0, 0.7);
+}
+
+.container-catalog-menu {
+  margin: 0;
+  padding: 0;
+
+  /* Временно для сетки */
+  min-height: 50px;
+  background-color: rgba(50, 50, 50, 0.7);
+}
+
+.container-slides {
+  margin: 0;
+  padding: 0;
+
+  /* Временно для сетки */
+  min-height: 50px;
+  background-color: rgba(60, 50, 50, 0.7);
+}
+
+.container-goods {
+  margin: 0;
+  padding: 0;
+
+  /* Временно для сетки */
+  min-height: 50px;
+  background-color: rgba(50, 60, 50, 0.7);
+}
+
+.container-services {
+  margin: 0;
+  padding: 0;
+
+  /* Временно для сетки */
+  min-height: 50px;
+  background-color: rgba(50, 50, 60, 0.7);
+}
+
+.container-suppliers {
+  margin: 0;
+  padding: 0;
+
+  /* Временно для сетки */
+  min-height: 50px;
+  background-color: rgba(70, 50, 50, 0.7);
+}
+
+.container-info {
+  margin: 0;
+  padding: 0;
+
+  /* Временно для сетки */
+  min-height: 50px;
+  background-color: rgba(50, 70, 50, 0.7);
+}
+
+.container-contacts {
+  margin: 0;
+  padding: 0;
+
+  /* Временно для сетки */
+  min-height: 50px;
+  background-color: rgba(50, 50, 70, 0.7);
+}
