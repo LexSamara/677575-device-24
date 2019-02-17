@@ -381,7 +381,6 @@ button {
 }
 .navigation-features li:nth-child(4) {
  outline: 1px solid green;
- /*width: 100px;*/
 }
 
 .search svg {
@@ -414,7 +413,6 @@ button {
   outline: 1px solid blue;
   width: 1160px;
   padding-top: 40px;
-  /*margin-bottom: 50px;*/
 }
 
 .navigation-services li:nth-child(1) {
@@ -451,39 +449,114 @@ button {
 .container {
   margin: 0;
   padding: 0;
-
-  /* Временно для сетки */
-  min-height: 180px;
-  /*background-color: rgba(50, 50, 0, 0.7);*/
 }
 
 .container-catalog-menu {
   margin: 0;
   padding: 0;
-
-  /* Временно для сетки */
-  min-height: 50px;
-  /*background-color: rgba(50, 50, 50, 0.7);*/
+  min-height: 162px;
 }
 
 .container-slides {
   margin: 0;
   padding: 0;
-
-  /* Временно для сетки */
-  min-height: 50px;
-  /*background-color: rgba(60, 50, 50, 0.7);*/
+  min-height: 480px;
+  outline: 1px solid red;
 }
 
+
+
+
+/* ------- Googs  ------------- */
 .container-goods {
   margin: 0;
   padding: 0;
-
-  /* Временно для сетки */
-  min-height: 50px;
-  /*background-color: rgba(50, 60, 50, 0.7);*/
 }
 
+.container-goods-center {
+  width: 1160px;
+  margin: 0 auto;
+  outline: 1px solid blue;
+}
+
+.container-goods-list {
+  margin: 0;
+  padding: 0;
+  min-height: 240px;
+  width: 100%;
+  outline: 1px solid red;
+  display: flex;
+  justify-content: space-between;
+}
+
+.container-goods-item {
+  width: 160px;
+}
+
+.container-goods-item .item-pics {
+  width: 160px;
+  height: 160px;
+  margin: 0;
+  padding: 0;
+  background-color: #f7e296;
+/*  display: flex;
+  justify-content: center;
+  align-items: center;*/
+}
+
+.item-pics-virtual svg {
+  margin-top: 53px;
+  margin-left: 31px
+}
+
+.item-pics-selfie svg {
+  margin-top: 41px;
+  margin-left: 38px;
+}
+
+.item-pics-cams svg {
+  margin-top: 39px;
+  margin-left: 48px;
+}
+
+.item-pics-bracelet svg {
+  margin-top: 50px;
+  margin-left: 28px;
+}
+
+.item-pics-watch svg {
+  margin-top: 33px;
+  margin-left: 55px;
+}
+
+.item-pics-quadcopters svg {
+  margin-top: 48px;
+  margin-left: 13px;
+}
+
+.container-goods-item p {
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  outline: 1px solid red;
+  padding-left: 0px;
+  padding-top: 33px;
+  letter-spacing: 0.5px;
+}
+
+.item-pics-bracelet + p,
+.item-pics-cams + p,
+.item-pics-quadcopters + p {
+  letter-spacing: 0px;
+}
+
+
+
+
+
+
+
+/* -------------- services ---------- */
 .container-services {
   margin: 0;
   padding: 0;
@@ -493,6 +566,13 @@ button {
   /*background-color: rgba(50, 50, 60, 0.7);*/
 }
 
+
+
+
+
+
+
+/* ----------- suppliers ------------ */
 .container-suppliers {
   margin: 0;
   padding: 0;
