@@ -511,7 +511,6 @@ a.basket:active path {
 
 
 .container-catalog-menu {
-  display: none;
   font-family: "Open Sans", "Arial", sans-serif;
   font-weight: 300;
   font-style: normal;
@@ -520,19 +519,24 @@ a.basket:active path {
   list-style: none;
   margin: 0;
   padding: 0;
-  width: 1200px;
+  width: 1160px;
+  min-height: 164px;
   margin: 0 auto;
-  /*outline: 1px solid red;*/
+  outline: 1px solid red;
+  background-color: rgba(247, 226, 150, 1);
+  /*position: relative;*/
 }
 
 .catalog-menu-wrapper {
   margin: 0;
   padding: 0;
   width: 1160px;
-  min-height: 162px;
   margin: 0 auto;
+  padding-bottom: 36px;
   display: flex;
   background-color: rgba(247, 226, 150, 1);
+  outline: 1px solid blue;
+  display: none;
 }
 
 .catalog-menu-list {
