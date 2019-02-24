@@ -194,7 +194,7 @@ button {
 
 /* Button */
 
-.container-info a,
+a.button,
 .container-contacts a.button,
 .modal-form-button-send,
 .filters-button-display {
@@ -522,7 +522,7 @@ a.basket:active path {
   width: 1160px;
   min-height: 164px;
   margin: 0 auto;
-  outline: 1px solid red;
+  /*outline: 1px solid red;*/
   background-color: rgba(247, 226, 150, 1);
   /*position: relative;*/
 }
@@ -591,8 +591,122 @@ a.basket:active path {
   outline: 1px solid red;
 }
 
+.slide-1-wrapper {
+  margin: 0;
+  padding: 0;
+  width: 1160px;
+  margin: 0 auto;
+  min-height: 480px;
+  outline: 1px solid blue;
+  display: flex;
+}
 
+.slide-1-pic {
+  margin: 0;
+  padding: 0;
+  outline: 1px solid green;
+  width: 560px;
+  position: relative;
+  margin-right: 20px;
+}
 
+.slide-1-pic img {
+  position: absolute;
+  left: 90px;
+  bottom: 107px;
+}
+
+.slide-1-details {
+  margin: 0;
+  padding: 0;
+  outline: 1px solid green;
+  position: relative;
+  width: 500px;
+  /*padding-left: 20px;*/
+}
+
+.slide-1-details .slide-white-line {
+  position: absolute;
+  width: 100px;
+  height: 7px;
+  background-color: white;
+  top: -75px;
+  left: 20px;
+}
+
+.slide-1-details .slide-number {
+  font-size: 179px;
+  line-height: 179px;
+  font-weight: 700;
+  color: white;
+  display: block;
+  position: absolute;
+  top: -305px;
+  right: -32px;
+}
+
+.slide-1-details .slide-tagline {
+  font-size: 47px;
+  line-height: 56px;
+  font-weight: 700;
+  display: block;
+  position: relative;
+  margin: 0;
+  padding: 0;
+  top: -33px;
+  left: 20px;
+  letter-spacing: 0.6px;
+  outline: 1px solid green;
+  width: 400px;
+}
+
+.slide-1-details .slide-add-text {
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 30px;
+  font-weight: 300;
+  margin: 0;
+  padding: 0;
+  display: block;
+  position: relative;
+  top: -14px;
+  left: 20px;
+  outline: 1px solid green;
+  letter-spacing: 0.1px;
+  width: 480px;
+}
+
+.slide-1-details .button-wrapper {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  /*outline: 1px solid blue;*/
+  margin-left: 20px;
+  margin-top: 35px;
+  justify-content: space-between;
+}
+
+.button-wrapper a.button {
+  outline: 1px solid green;
+  width: 220px;
+}
+
+.slide-1-details .container-slider-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  outline: 1px solid green;
+  display: flex;
+  padding-right: 2px;
+  padding-top: 6px;
+}
+
+.container-slider-list li {
+  margin: 0;
+  padding: 0;
+  padding-left: 20px;
+}
 
 /* ------- Googs  ------------- */
 .container-goods {
