@@ -509,13 +509,30 @@ a.basket:active path {
 
 /* ------- Сontainer-catalog-menu -----  */
 
+
 .container-catalog-menu {
+  display: none;
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 15px;
+  line-height: 36px;
+  list-style: none;
   margin: 0;
   padding: 0;
   width: 1200px;
   margin: 0 auto;
+  /*outline: 1px solid red;*/
+}
+
+.catalog-menu-wrapper {
+  margin: 0;
+  padding: 0;
+  width: 1160px;
   min-height: 162px;
-  outline: 1px solid red;
+  margin: 0 auto;
+  display: flex;
+  background-color: rgba(247, 226, 150, 1);
 }
 
 .catalog-menu-list {
@@ -528,8 +545,32 @@ a.basket:active path {
   line-height: 36px;
   color: rgba(0, 0, 0, 1);
   display: flex;
+  width: 660px;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  align-items: flex-start;
+  margin-left: 60px;
+  margin-top: 20px;
 }
 
+.catalog-menu-list li {
+  margin: 0;
+  padding: 0;
+  width: 200px;
+  /*outline: 1px solid green;*/
+  margin-right: 20px;
+}
+
+.catalog-menu-list li:nth-child(2),
+.catalog-menu-list li:nth-child(5) {
+  padding-left: 20px;
+}
+
+.catalog-menu-list a {
+  margin: 0;
+  padding: 0;
+  display: block;
+}
 
 
 
