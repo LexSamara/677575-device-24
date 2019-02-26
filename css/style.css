@@ -197,7 +197,8 @@ button {
 a.button,
 .container-contacts a.button,
 .modal-form-button-send,
-.filters-button-display {
+.filters-button-display,
+.services-item .button {
   font-size: 18px;
   line-height: 24px;
   font-weight: 700;
@@ -588,7 +589,7 @@ a.basket:active path {
   width: 1200px;
   margin: 0 auto;
   min-height: 480px;
-  outline: 1px solid red;
+  /*outline: 1px solid red;*/
 }
 
 .slide-1-wrapper {
@@ -597,14 +598,14 @@ a.basket:active path {
   width: 1160px;
   margin: 0 auto;
   min-height: 480px;
-  outline: 1px solid blue;
+  /*outline: 1px solid blue;*/
   display: flex;
 }
 
 .slide-1-pic {
   margin: 0;
   padding: 0;
-  outline: 1px solid green;
+  /*outline: 1px solid green;*/
   width: 560px;
   position: relative;
   margin-right: 20px;
@@ -619,7 +620,7 @@ a.basket:active path {
 .slide-1-details {
   margin: 0;
   padding: 0;
-  outline: 1px solid green;
+  /*outline: 1px solid green;*/
   position: relative;
   width: 500px;
   /*padding-left: 20px;*/
@@ -656,7 +657,7 @@ a.basket:active path {
   top: -33px;
   left: 20px;
   letter-spacing: 0.6px;
-  outline: 1px solid green;
+  /*outline: 1px solid green;*/
   width: 400px;
 }
 
@@ -672,31 +673,35 @@ a.basket:active path {
   position: relative;
   top: -14px;
   left: 20px;
-  outline: 1px solid green;
+  /*outline: 1px solid green;*/
   letter-spacing: 0.1px;
   width: 480px;
 }
 
-.slide-1-details .button-wrapper {
+.slide-1-details .interactive-elements-wrapper {
   margin: 0;
   padding: 0;
   display: flex;
   /*outline: 1px solid blue;*/
   margin-left: 20px;
   margin-top: 35px;
+  margin-bottom: 53px;
   justify-content: space-between;
 }
 
-.button-wrapper a.button {
-  outline: 1px solid green;
+.interactive-elements-wrapper a.button {
+  margin: 0;
+  padding: 0;
+  /*outline: 1px solid green;*/
   width: 220px;
+  padding-top: 2px;
 }
 
 .slide-1-details .container-slider-list {
   margin: 0;
   padding: 0;
   list-style: none;
-  outline: 1px solid green;
+  /*outline: 1px solid green;*/
   display: flex;
   padding-right: 2px;
   padding-top: 6px;
@@ -708,6 +713,47 @@ a.basket:active path {
   padding-left: 20px;
 }
 
+.properties-table-wrapper {
+  margin: 0;
+  padding: 0;
+  /*outline: 1px solid red;*/
+}
+
+.properties-table {
+  margin: 0;
+  padding: 0;
+  text-align: left;
+}
+
+.properties-table td {
+  font-size: 36px;
+  font-weight: 48px;
+  /*outline: 1px solid blue;*/
+  width: 140px;
+  padding-top: 5px;
+}
+
+.properties-table th {
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-weight: 300;
+  font-size: 13px;
+  line-height: 20px;
+  padding-top: 8px;
+}
+
+.properties-table .first-col {
+  padding-left: 18px;
+}
+
+.properties-table .second-col {
+  padding-left: 35px;
+}
+
+.properties-table .third-col {
+  padding-left: 33px;
+}
+
+
 /* ------- Googs  ------------- */
 .container-goods {
   margin: 0;
@@ -718,6 +764,7 @@ a.basket:active path {
   width: 1160px;
   margin: 0 auto;
   /*outline: 1px solid blue;*/
+  margin-bottom: 81px;
 }
 
 .container-goods-list {
@@ -807,18 +854,100 @@ a.basket:active path {
 .container-services {
   margin: 0;
   padding: 0;
-
-  min-height: 470px;
+  min-height: 388px;
   width: 1440px;
   margin: 0px auto;
   outline: 1px solid red;
   margin-bottom: 94px;
+  background-color: rgba(229, 229, 229, 1);
+}
+
+.services-list,
+.services-item {
+  margin: 0;
+  padding: 0;
+}
+
+.services-background {
+  min-height: 100px;
+  background-color: white;
+}
+
+.services-wrapper {
+  width: auto;
+  outline: 1px solid blue;
+  display: flex;
 }
 
 .services-list {
   margin: 0;
   padding: 0;
+  margin-left: 140px;
+  width: 380px;
+  outline: 1px solid blue;
+  margin-right: 20px;
+  position: relative;
+  top: -23px;
 }
+
+.services-item {
+  margin: 0;
+  padding: 0;
+  outline: 1px solid green;
+  width: 160px;
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+}
+
+
+.service-delivery-wrapper {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  outline: 1px solid blue;
+}
+
+.service-description {
+  width: 460px;
+  outline: 1px solid green;
+  position: relative;
+}
+
+.service-description .service-headline {
+  font-size: 47px;
+  line-height: 48px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  display: block;
+  position: relative;
+  top: -28px;
+  left: 2px;
+}
+
+.service-description .service-tagline {
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 30px;
+  display: block;
+  position: relative;
+  padding-top: 3px;
+  padding-right: 20px;
+  letter-spacing: 0.3px;
+}
+
+.service-image img {
+  position: relative;
+  left: 99px;
+  top: -16px;
+}
+
+
+
+
+
 
 
 /* ----------- suppliers ------------ */

@@ -150,7 +150,7 @@
             <p class="slide-number">01</p>
             <p class="slide-tagline">Делай селфи, как Бен Стиллер!</p>
             <p class="slide-add-text">Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
-            <div class="button-wrapper">
+            <div class="interactive-elements-wrapper">
               <a class="button" href="selfie-details.html">Подробнее</a>
               <ul class="container-slider-list">
                 <li>
@@ -163,6 +163,20 @@
                   <input type="radio" name="slider" id="button-3">
                 </li>
               </ul>
+            </div>
+            <div class="properties-table-wrapper">
+              <table class="properties-table">
+                <tr>
+                  <td class="first-col">8,5 м</td>
+                  <td class="second-col">5 кг</td>
+                  <td class="third-col">Карбон</td>
+                </tr>
+                <tr>
+                  <th class="first-col">Длина палки</th>
+                  <th class="second-col">Вес палки</th>
+                  <th class="third-col">Материал</th>
+                </tr>
+              </table>
             </div>
           </section>
         </div>
@@ -409,17 +423,33 @@
 
       <section class="container-services">
         <h2 class="visually-hidden">Дополнительные услуги</h2>
-        <ul class="services-list services-button">
-          <li>
-            <button>Доставка</button>
-          </li>
-          <li>
-            <button>Гарантия</button>
-          </li>
-          <li>
-            <button>Кредит</button>
-          </li>
-        </ul>
+        <div class="services-background"></div>
+        <div class="services-wrapper">
+          <ul class="services-list">
+            <li class="services-item">
+              <button class="button">Доставка</button>
+            </li>
+            <li class="services-item">
+              <button class="button">Гарантия</button>
+            </li>
+            <li class="services-item">
+              <button class="button">Кредит</button>
+            </li>
+          </ul>
+          <div class="services-content">
+            <div class="service-delivery-wrapper current-service">
+              <div class="service-description">
+                <span class="service-headline">Доставка</span>
+                <span class="service-tagline">Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.</span>
+              </div>
+              <div class="service-image">
+                <img src="img/delivery.svg" alt="Картинка сервиса доставки">
+              </div>
+            </div>
+          <div class="service-warranty-wrapper"></div>
+          <div class="service-credit-wrapper"></div>
+          </div>
+        </div>
       </section>
 
       <section class="container-suppliers">
