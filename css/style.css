@@ -238,14 +238,15 @@ button {
 .filters {
   margin: 0px;
   padding: 0px;
-  flex-basis: 800px;
+  /*flex-basis: 800px;*/
+  width: 800px;
   outline: 1px dotted blue;
 }
 
 .catalog {
   margin: 0px;
   padding: 0px;
-  flex-grow: 1;
+  /*flex-grow: 1;*/
   outline: 1px dotted red;
 
 }
@@ -301,6 +302,8 @@ button {
   display: flex;
   background-color: rgba(92%, 92%, 92%, 1);
   outline: 1px solid red;
+  margin-bottom: 70px;
+
 }
 
 .catalog-title-list {
@@ -330,24 +333,55 @@ button {
   padding: 0;
   display: flex;
   flex-wrap: wrap;
-  margin-left: 64px;
+  margin-left: 54px;
 }
 
 .catalog-item {
   margin: 0;
   padding: 0;
-  display: flex;
-  width: 400px;
-
-  flex-flow: column;
+  width: 360px;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-bottom: 45px;
   outline: 1px solid green;
 }
 
-.item-article > a {
-  order: 2;
+.item-article h3 {
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 700;
+  display: block;
+  margin: 0;
+  padding: 0;
+  /*padding-right: 50px;*/
+  outline: 1px solid green;
 }
 
+.item-article-description {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 25px;
+}
 
+.catalog-pagination-list,
+.pagination-list-numbers {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  background-color: rgba(92%, 92%, 92%, 1);
+  margin-left: 70px;
+  margin-right: 140px;
+  padding: 15px 30px 20px 30px;
+  justify-content: space-between;
+  outline: 1px dotted blue;
+}
+
+.pagination-list-numbers {
+  margin: 0;
+  padding: 0;
+}
 
 
 
@@ -581,7 +615,7 @@ a.button,
   position: relative;
 }
 
-.navigation-services-list .catalog-item {
+.navigation-services-list .navigation-catalog-item {
   /*outline: 1px solid green;*/
   margin-left: 60px;
   padding-top: 0px;
@@ -605,7 +639,7 @@ a.button,
   top: 4px;
 }
 
-.catalog-item polygon {
+.navigation-catalog-item polygon {
   fill: rgba(0, 0, 0, 0.3);
 }
 
@@ -1335,13 +1369,13 @@ a.supplier-vive:hover {
 
 .footer-features-list .footer-profile-item {
   width: 180px;
-  padding-left: 24px;
+  padding-left: 38px;
   padding-top: 5px;
 }
 
 .footer-features-list .footer-out-item {
   width: 90px;
-  padding-left: 24px;
+  padding-left: 10px;
   padding-top: 5px;
 }
 
@@ -1361,6 +1395,12 @@ a.supplier-vive:hover {
   position: absolute;
   left: 15px;
   top: 8px;
+}
+
+.footer-profile-item svg {
+  position: absolute;
+  left: 12px;
+  top: 7px;
 }
 
 .footer-compare-item svg {
@@ -1385,17 +1425,17 @@ a.supplier-vive:hover {
 
 a.footer-logo-ref:hover path,
 a.item-inlet-ref:hover path,
+a.item-profile-ref:hover path,
 a.item-comare-ref:hover svg,
-a.item-basket-ref:hover path,
-a.item-profile:hover path {
+a.item-basket-ref:hover path {
   fill: rgba(100%, 78%, 0%, 0.6);
 }
 
 a.footer-logo-ref:active path,
 a.item-inlet-ref:active path,
+a.item-profile-ref:active path,
 a.item-comare-ref:active svg,
-a.item-basket-ref:active path,
-a.item-profile:active path {
+a.item-basket-ref:active path {
   fill: rgba(100%, 78%, 0%, 0.3);
 }
 
