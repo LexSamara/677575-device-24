@@ -140,7 +140,7 @@
 
       <section class="container-slides">
         <h2 class="visually-hidden">TOP-3 товары</h2>
-        <div class="slide-1-wrapper current">
+        <div class="slide-1-wrapper current-slide">
           <div class="slide-1-pic">
             <img src="img/slider-1.png" alt="Самая длинная палка для селфи">
           </div>
@@ -148,21 +148,10 @@
             <h3 class="visually-hidden">Самая длинная палка для селфи</h3>
             <div class="slide-white-line"></div>
             <p class="slide-number">01</p>
-            <p class="slide-tagline">Делай селфи, как Бен Стиллер!</p>
+            <h4 class="slide-tagline">Делай селфи, как Бен Стиллер!</h4>
             <p class="slide-add-text">Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
             <div class="interactive-elements-wrapper">
               <a class="button" href="selfie-details.html">Подробнее</a>
-              <ul class="container-slider-list">
-                <li>
-                  <input type="radio" name="slider" id="button-1" checked>
-                </li>
-                <li>
-                  <input type="radio" name="slider" id="button-2">
-                </li>
-                <li>
-                  <input type="radio" name="slider" id="button-3">
-                </li>
-              </ul>
             </div>
             <div class="properties-table-wrapper">
               <table class="properties-table">
@@ -180,6 +169,17 @@
             </div>
           </section>
         </div>
+        <ul class="container-slider-list">
+          <li>
+            <input type="radio" name="slider" id="button-1" checked>
+          </li>
+          <li>
+            <input type="radio" name="slider" id="button-2">
+          </li>
+          <li>
+            <input type="radio" name="slider" id="button-3">
+          </li>
+        </ul>
       </section>
 
       <section class="container-goods">
@@ -439,8 +439,8 @@
           <div class="services-content">
             <div class="service-delivery-wrapper current-service">
               <div class="service-description">
-                <span class="service-headline">Доставка</span>
-                <span class="service-tagline">Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.</span>
+                <h3 class="service-headline">Доставка</h3>
+                <p class="service-tagline">Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
               </div>
               <div class="service-image">
                 <img src="img/delivery.svg" alt="Картинка сервиса доставки">
@@ -593,10 +593,6 @@
       </div>
 
       <div class="footer-wrapper-bottom">
-        <div class="footer-orange-line">
-        </div>
-        <div class="footer-empty-block">
-        </div>
         <div class="footer-social">
           <ul class="footer-social-list">
             <li class="footer-social-item">
@@ -645,8 +641,6 @@
               </a>
             </li>
           </ul>
-        </div>
-        <div class="footer-empty-block">
         </div>
         <div class="footer-copyright">
           <a href="https://htmlacademy.ru" class="button">

@@ -213,6 +213,10 @@ button {
   padding-right: 15px;
 }
 
+.breadcrumbs-list .item-main::after,
+.breadcrumbs-list .item-catalog::after {
+  content: ">";
+}
 
 
 
@@ -780,6 +784,7 @@ a.basket:active path {
 .container-slides {
   margin: 0;
   padding: 0;
+  position: relative;
   width: 1200px;
   margin: 0 auto;
   min-height: 480px;
@@ -891,9 +896,12 @@ a.basket:active path {
   padding-top: 2px;
 }
 
-.slide-1-details .container-slider-list {
+.container-slider-list {
   margin: 0;
   padding: 0;
+  position: absolute;
+  right: 100px;
+  top: 208px;
   list-style: none;
   /*outline: 1px solid green;*/
   display: flex;
@@ -1116,8 +1124,9 @@ a.basket:active path {
   letter-spacing: 1px;
   display: block;
   position: relative;
-  top: -28px;
+  top: -75px;
   left: 2px;
+  /*outline: 1px solid red;*/
 }
 
 .service-description .service-tagline {
@@ -1130,6 +1139,8 @@ a.basket:active path {
   padding-top: 3px;
   padding-right: 20px;
   letter-spacing: 0.3px;
+  /*outline: 1px solid red;*/
+  top: -93px;
 }
 
 .service-image img {
@@ -1496,24 +1507,33 @@ a.item-basket-ref:active path {
 /*--------------- Footer bottom -----------*/
 .footer-wrapper-bottom {
   padding: 0px;
+  margin: 0;
   margin: 0 auto;
-  display: flex;
-  justify-content: space-between;
+  position: relative;
   /*outline: 1px solid red;*/
   width: 1160px;
   margin-bottom: 60px;
 }
 
-.footer-orange-line {
+
+.footer-social {
+  padding: 0px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: 0;
+  justify-content: flex-start;
+  /*outline: 1px dotted green;*/
+}
+
+.footer-social::before {
+  content: "";
   position: relative;
   top: 22px;
+  left: 0px;
   width: 80px;
   height: 7px;
   background-color: rgba(100%, 78%, 0%, 1);
-}
-
-.footer-empty-block {
-  width: 380px;
+  margin-right: 420px;
 }
 
 .footer-social-list {
@@ -1543,7 +1563,7 @@ a.item-basket-ref:active path {
 
 .footer-copyright {
   width: 80px;
-  /*outline: 1px solid green;*/
+  /*outline: 1px solid red;*/
 }
 
 .footer-copyright path {
@@ -1551,9 +1571,8 @@ a.item-basket-ref:active path {
 }
 
 .footer-copyright svg {
-  display: inline-block;
-  position: relative;
-  left: 54px;
+  position: absolute;
+  right: 0px;
   top: 8px;
 }
 
