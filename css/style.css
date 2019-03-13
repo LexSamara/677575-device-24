@@ -158,31 +158,36 @@ button {
 }
 
 .navigation-features-list .profile-in-item {
-  /*outline: 1px solid green;*/
   width: 286px;
   padding-left: 27px;
+
+  /*outline: 1px solid green;*/
 }
 
 .navigation-features-list .profile-user-item {
   width: 175px;
   padding-left: 27px;
+
   /*outline: 1px solid green;*/
 }
 
 .navigation-features-list .profile-out-item {
   width: 111px;
   padding-left: 2px;
+
   /*outline: 1px solid green;*/
 }
 
 .navigation-features-list .compare-item {
   width: 130px;
   padding-left: 22px;
+
   /*outline: 1px solid green;*/
 }
 
 .navigation-features-list .basket-item {
   padding-left: 25px;
+
   /*outline: 1px solid green;*/
 }
 
@@ -240,18 +245,21 @@ button {
 }
 
 .navigation-services-list .navigation-catalog-item {
-  /*outline: 1px solid green;*/
+  width: 540px;
   margin-left: 60px;
   padding-top: 0px;
-  width: 540px;
+
+  /*outline: 1px solid green;*/
 }
 .navigation-services-list .delivery-item {
-  /*outline: 1px solid green;*/
   width: 160px;
+
+  /*outline: 1px solid green;*/
 }
 .navigation-services-list .assurance-item {
-  /*outline: 1px solid green;*/
   width: 220px;
+
+  /*outline: 1px solid green;*/
 }
 .navigation-services-list .contacts-item {
   /*outline: 1px solid green;*/
@@ -268,11 +276,11 @@ button {
 }
 
 .inner-bottom-background {
-  margin: 0;
-  padding: 0;
   width: 1160px;
-  min-height: 50px;
   margin: 0 auto;
+  padding: 0;
+  min-height: 50px;
+
   background-color: rgba(247, 226, 150, 1);
   /*outline: 1px solid green;*/
 }
@@ -345,7 +353,7 @@ a.basket:active path {
   list-style: none;
 
   background-color: rgba(247, 226, 150, 1);
-  outline: 2px solid blue;
+  /*outline: 2px solid blue;*/
 }
 
 .catalog-menu-wrapper {
