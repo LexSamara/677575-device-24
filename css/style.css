@@ -412,7 +412,7 @@ a.basket:active path {
 /* ------- container-slides -----  */
 
 
-.container-slides {
+.container-slider {
   position: relative;
 
   width: 1200px;
@@ -420,20 +420,106 @@ a.basket:active path {
   margin: 0;
   padding: 0;
   margin: 0 auto;
-  /*outline: 1px solid red;*/
+  outline: 1px solid red;
 }
 
-.slide-1-wrapper {
+.slider-wrapper {
   display: flex;
   min-height: 480px;
   margin: 0;
   padding: 0;
-  width: 1160px;
-  margin: 0 auto;
-  /*outline: 1px solid blue;*/
+
+  outline: 1px dotted blue;
 }
 
-.slide-1-pic {
+.slider-controls {
+  position: absolute;
+  right: 22px;
+  top: 214px;
+  z-index: 100;
+
+  width: 110px;
+  height: 18px;
+
+  text-align: center;
+  font-size: 0;
+  transform: translateX(-50%);
+
+  /*outline: 1px solid red;*/
+}
+
+
+.slider-controls label {
+  position: relative;
+
+  display: inline-block;
+  width: 13px;
+  height: 13px;
+  margin-right: 20px;
+
+  border-radius: 50%;
+  border: 1px solid black;
+  cursor: pointer;
+
+  /*outline: 1px dotted red;*/
+}
+
+
+/*.slider-controls .active::after {
+  content: "";
+
+  position: absolute;
+  top: 25%;
+  left: 30%;
+  z-index: 1;
+
+  width: 5px;
+  height: 5px;
+
+  border: 1px solid black;
+
+  border-radius: 50%;
+}*/
+
+#product-1:checked ~ .slider-wrapper #slide1,
+#product-2:checked ~ .slider-wrapper #slide2,
+#product-3:checked ~ .slider-wrapper #slide3 {
+  display: block;
+}
+
+#product-1:checked ~ .slider-wrapper label[for="product-1"]::after,
+#product-2:checked ~ .slider-wrapper label[for="product-2"]::after,
+#product-3:checked ~ .slider-wrapper label[for="product-3"]::after {
+  content: "";
+
+  position: absolute;
+  top: 25%;
+  left: 30%;
+  z-index: 1;
+
+  width: 5px;
+  height: 5px;
+
+  border: 1px solid black;
+
+  border-radius: 50%;
+  /*outline: 1px dotted red;*/
+}
+
+
+.slider-list {
+  width: 1160px;
+  min-height: 480px;
+  margin: 0;
+  padding: 0;
+  margin: 0 auto;
+}
+
+.slider-item {
+  display: none;
+}
+
+.slide-pic {
   position: relative;
 
   width: 560px;
@@ -443,13 +529,25 @@ a.basket:active path {
   /*outline: 1px solid green;*/
 }
 
-.slide-1-pic img {
+.slide1-pic img {
   position: absolute;
   left: 90px;
   bottom: 107px;
 }
 
-.slide-1-details {
+.slide2-pic img {
+  position: absolute;
+  left: 115px;
+  bottom: 95px;
+}
+
+.slide3-pic img {
+  position: absolute;
+  left: 31px;
+  top: -48px;
+}
+
+.slide-details {
   position: relative;
 
   width: 500px;
@@ -458,7 +556,7 @@ a.basket:active path {
   /*outline: 1px solid green;*/
 }
 
-.slide-1-details .slide-white-line {
+.slide-details .slide-white-line {
   position: absolute;
   top: -75px;
   left: 20px;
@@ -469,7 +567,7 @@ a.basket:active path {
   background-color: white;
 }
 
-.slide-1-details .slide-number {
+.slide-details .slide-number {
   position: absolute;
   top: -305px;
   right: -32px;
@@ -482,13 +580,13 @@ a.basket:active path {
   color: white;
 }
 
-.slide-1-details .slide-tagline {
+.slide-details .slide-tagline {
   position: relative;
   top: -33px;
   left: 20px;
 
   display: block;
-  width: 400px;
+  width: 560px;
   margin: 0;
   padding: 0;
 
@@ -499,7 +597,7 @@ a.basket:active path {
   /*outline: 1px solid green;*/
 }
 
-.slide-1-details .slide-add-text {
+.slide-details .slide-add-text {
   position: relative;
   top: -14px;
   left: 20px;
@@ -515,10 +613,11 @@ a.basket:active path {
   line-height: 30px;
   font-weight: 300;
   letter-spacing: 0.1px;
+
   /*outline: 1px solid green;*/
 }
 
-.slide-1-details .interactive-elements-wrapper {
+.slide-details .interactive-elements-wrapper {
   display: flex;
   margin: 0;
   padding: 0;
@@ -530,24 +629,12 @@ a.basket:active path {
 }
 
 .interactive-elements-wrapper a.button {
-  margin: 0;
-  padding: 0;
-  /*outline: 1px solid green;*/
   width: 220px;
-  padding-top: 2px;
-}
-
-.container-slider-list {
   margin: 0;
   padding: 0;
-  position: absolute;
-  right: 100px;
-  top: 208px;
-  list-style: none;
+  padding-top: 2px;
+
   /*outline: 1px solid green;*/
-  display: flex;
-  padding-right: 2px;
-  padding-top: 6px;
 }
 
 .container-slider-list li {
@@ -559,6 +646,7 @@ a.basket:active path {
 .properties-table-wrapper {
   margin: 0;
   padding: 0;
+
   /*outline: 1px solid red;*/
 }
 
@@ -569,34 +657,60 @@ a.basket:active path {
 }
 
 .properties-table td {
+  padding-top: 3px;
+
   font-size: 36px;
   font-weight: 400;
   line-height: 48px;
-  /*outline: 1px solid blue;*/
+
+  /*outline: 1px solid green;*/
+}
+
+.table-slide1 td {
   width: 140px;
-  padding-top: 5px;
+
+}
+
+.table-slide2 td {
+  width: 200px;
+}
+
+.table-slide3 td {
+  width: 160px;
 }
 
 .properties-table th {
+  padding-top: 3px;
+
   font-family: "Open Sans", "Arial", sans-serif;
   font-weight: 300;
   font-size: 13px;
   line-height: 20px;
-  padding-top: 8px;
 }
 
-.properties-table .first-col {
+.table-slide1 .first-col {
   padding-left: 18px;
 }
 
-.properties-table .second-col {
+.table-slide1 .second-col {
   padding-left: 35px;
 }
 
-.properties-table .third-col {
+.table-slide1 .third-col {
   padding-left: 33px;
 }
 
+.table-slide2 .first-col {
+  padding-left: 18px;
+}
+
+.table-slide3 .first-col {
+  padding-left: 18px;
+}
+
+.table-slide3 .second-col {
+  padding-left: 15px;
+}
 
 /* ------- container-goods  ------------- */
 
