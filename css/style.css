@@ -606,8 +606,8 @@ a.basket:active path {
   margin: 0;
   padding: 0;
   margin-left: 20px;
-  margin-top: 37px;
-  margin-bottom: 53px;
+  margin-top: 28px;
+  margin-bottom: 45px;
 
   /*outline: 1px solid green;*/
 }
@@ -799,6 +799,8 @@ a.basket:active path {
 
 /* -------------- container-services ---------- */
 .container-services {
+  z-index: -10;
+
   width: auto;
   min-height: 288px;
   margin: 0;
@@ -831,36 +833,35 @@ a.basket:active path {
 
 .services-list {
   position: relative;
-  top: -23px;
+  z-index: 0;
+  top: -22px;
 
   width: 380px;
   margin-right: 20px;
 
-  outline: 1px dotted red;
+  /*outline: 1px dotted red;*/
 }
 
 .services-item {
   position: relative;
+
   width: 160px;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  margin-bottom: 20px;
+  /*margin-top: 10px;*/
+  margin-bottom: 25px;
 
   text-align: center;
 
-  outline: 1px solid green;
+  /*outline: 1px solid green;*/
 }
 
 .services-item button {
   display: inline-block;
   width: inherit;
   margin: 0;
-  padding: 0;
+  padding: 8px 0;
 
-  outline: 1px dotted blue;
+  /*outline: 1px dotted blue;*/
 }
-
-
 
 .service-delivery-wrapper {
   display: flex;
@@ -911,20 +912,6 @@ a.basket:active path {
   left: 99px;
   top: -16px;
 }
-
-/*.container-services button:hover {
-  background-color: rgba(94%, 77%, 18%, 1);
-}
-
-.container-services button:active {
-  color: rgba(97%, 88%, 52%, 1);;
-
-  background-color: #000000;
-}*/
-
-
-
-
 
 
 /* ----------- container-suppliers ------------ */
@@ -1015,7 +1002,7 @@ a.supplier-vive:hover {
   margin: 0;
   padding: 0;
   margin: 0 auto;
-  margin-bottom: 90px;
+  margin-bottom: 74px;
   /*outline: 1px solid red;*/
 }
 
@@ -1060,7 +1047,7 @@ a.supplier-vive:hover {
 .container-info-list {
   margin: 0;
   padding: 0;
-  margin-bottom: 62px;
+  margin-bottom: 54px;
 
   /*outline: 1px solid red;*/
 }
@@ -1101,7 +1088,7 @@ a.supplier-vive:hover {
   display: inline-block;
   width: 260px;
   margin: 0px;
-  padding: 0px;
+  padding: 8px 0;
 
   /*outline: 1px solid green;*/
 }
@@ -1131,7 +1118,7 @@ a.supplier-vive:hover {
 .container-contacts p:nth-of-type(2) {
   margin: 0;
   padding: 0;
-  margin-bottom: 67px;
+  margin-bottom: 59px;
 
   /*outline: 1px solid green;*/
 }
@@ -1388,6 +1375,17 @@ a.supplier-vive:hover {
   text-transform: uppercase;
   text-align: center;
   letter-spacing: 4px;
+
+  /*outline: 1px solid blue;*/
+}
+
+.interactive-elements-wrapper a {
+  display: inline-block;
+  width: inherit;
+  margin: 0;
+  padding: 8px 0;
+
+  /*outline: 1px dotted green;*/
 }
 
 
@@ -1404,15 +1402,15 @@ a.supplier-vive:hover {
 .interactive-elements-wrapper a::before,
 .container-info > a::before,
 .container-contacts > a::before,
-.services-item1 .button::before {
+.services-item button::before {
   content: "";
 
   position: absolute;
-  top: 35%;
+  top: 40%;
   left: 0;
 
   width: 100%;
-  height: 30%;
+  height: 20%;
   background-color: rgba(94%, 77%, 18%, 1);
 /*  transition: top 0s ease;
   transition: height 0.2s ease;*/
@@ -1420,17 +1418,30 @@ a.supplier-vive:hover {
 
 }
 
-.container-info a:hover::before {
+.interactive-elements-wrapper a:hover,
+.container-info a:hover,
+.container-contacts a:hover,
+.services-item button:hover {
   content: "";
-
-  position: absolute;
-  top: 0;
-  left: 0;
-
-  height: 100%;
 
   background-color: rgba(94%, 77%, 18%, 1);
 
+}
+
+.interactive-elements-wrapper a:active,
+.container-info a:active,
+.container-contacts a:active {
+  content: "";
+
+  background-color: rgba(94%, 77%, 18%, 1);
+  color: rgba(0,0,0,0.2);
+}
+
+.services-item button:active {
+  content: "";
+
+  background-color: rgba(0%, 0%, 0%, 1);
+  color: rgba(94%, 85%, 50%, 1);
 }
 
 
