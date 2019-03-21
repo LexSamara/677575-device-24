@@ -138,7 +138,7 @@ button {
   list-style: none;
 
   background-color: rgba(97%, 89%, 59%, 1);;
-  /*outline: 1px solid green;*/
+  /*outline: 1px solid red;*/
 }
 
 .navigation-features-list a {
@@ -222,8 +222,10 @@ button {
   padding: 0;
 
   width: 1160px;
+  /*min-height: 226px;*/
   margin: 0 auto;
-  padding-top: 39px;
+  padding-top: 38px;
+  padding-bottom: 163px;
 
   font-weight: 700;
   font-size: 18px;
@@ -233,39 +235,47 @@ button {
   letter-spacing: 3.5px;
 
   background-color: rgba(247, 226, 150, 1);
-  /*outline: 1px solid blue;*/
-}
-
-.navigation-services-list a {
-  display: block;
+  /*outline: 2px solid blue;*/
 }
 
 .navigation-services-list li {
   position: relative;
+
+  /*outline: 1px solid grey;*/
+}
+
+.navigation-services-list a {
+  display: inline-block;
 }
 
 .navigation-services-list .navigation-catalog-item {
-  width: 540px;
+  /*width: 540px;*/
   margin-left: 60px;
+  margin-right: 100px;
+
   padding-top: 0px;
 
   /*outline: 1px solid green;*/
 }
 .navigation-services-list .delivery-item {
   width: 160px;
+  margin-left: 210px;
+  padding-left: 12px;
 
   /*outline: 1px solid green;*/
 }
 .navigation-services-list .assurance-item {
   width: 220px;
+  padding-left: 10px;
 
   /*outline: 1px solid green;*/
 }
 .navigation-services-list .contacts-item {
+  padding-left: 12px;
   /*outline: 1px solid green;*/
 }
 
-.navigation-catalog svg {
+.navigation-catalog-ref svg {
   position: absolute;
   left: 230px;
   top: 4px;
@@ -305,11 +315,17 @@ button {
 }
 
 .navigation-features-list .search:hover,
-.navigation-services-list a:hover {
+.navigation-catalog-item a:hover,
+.delivery-item a:hover,
+.assurance-item a:hover,
+.contacts-item a:hover {
   color: rgba(0,0,0,0.5);
 }
 
-.navigation-services-list a:active {
+.navigation-features-list .search:active,
+.delivery-item a:active,
+.assurance-item a:active,
+.contacts-item a:active {
   color: rgba(0,0,0,0.2);
 }
 
@@ -327,49 +343,35 @@ a.basket:active path {
   fill: rgba(0, 0, 0, 0.3);
 }
 
-
-/* ------- container-catalog-menu -----  */
-
-.container {
-  width: auto;
-  margin: 0;
-  padding: 0;
-  margin: 0 auto;
-
-  /*outline: 2px solid red;*/
+li.navigation-catalog-item:hover .container-catalog-menu {
+  display: block;
 }
 
 .container-catalog-menu {
+  position: absolute;
+  z-index: 1;
+
   margin: 0;
   padding: 0;
-  width: 1160px;
-  margin: 0 auto;
-  min-height: 164px;
-
-  font-family: "Open Sans", "Arial", sans-serif;
-  font-weight: 300;
-  font-style: normal;
-  font-size: 15px;
-  line-height: 36px;
-  list-style: none;
-
+  width: 700px;
   background-color: rgba(247, 226, 150, 1);
 
-  /*outline: 2px solid blue;*/
+  display: none;
+
+  /*outline: 2px dotted blue;*/
 }
 
 .catalog-menu-wrapper {
+  position: relative;
   display: flex;
-  width: 1160px;
   margin: 0;
   padding: 0;
   margin: 0 auto;
-  padding-bottom: 36px;
+  padding-bottom: 35px;
 
   background-color: rgba(247, 226, 150, 1);
-  /*outline: 1px solid blue;*/
+  /*outline: 1px solid red;*/
 
-  display: none;
 }
 
 .catalog-menu-list {
@@ -378,17 +380,20 @@ a.basket:active path {
   align-content: flex-start;
   align-items: flex-start;
   width: 660px;
-  margin-left: 60px;
-  margin-top: 20px;
   margin: 0;
   padding: 0;
+  margin-top: 20px;
 
   list-style: none;
   font-family: "Open Sans", "Arial", sans-serif;
   font-weight: 300;
   font-size: 15px;
   line-height: 36px;
+  text-transform: none;
+  letter-spacing: 0.5px;
   color: rgba(0, 0, 0, 1);
+
+  /*outline: 1px solid green;*/
 
 }
 
@@ -397,7 +402,8 @@ a.basket:active path {
   margin: 0;
   padding: 0;
   margin-right: 20px;
-  /*outline: 1px solid green;*/
+
+  /*outline: 1px dotted green;*/
 }
 
 .catalog-menu-list li:nth-child(2),
@@ -411,8 +417,20 @@ a.basket:active path {
   padding: 0;
 }
 
-/* ------- container-slides -----  */
+.catalog-menu-list a:active {
+  color: rgba(0, 0, 0, 0.2);
+}
 
+/* ------- container-catalog-menu -----  */
+
+.container {
+  width: auto;
+  margin: 0;
+  padding: 0;
+  margin: 0 auto;
+
+  /*outline: 2px solid red;*/
+}
 
 .container-slider {
   position: relative;
@@ -1443,25 +1461,6 @@ a.supplier-vive:hover {
   background-color: rgba(0%, 0%, 0%, 1);
   color: rgba(94%, 85%, 50%, 1);
 }
-
-
-/*.interactive-elements-wrapper:hover {
-  background-color: rgba(94%, 77%, 18%, 1);
-}*/
-
-/*.interactive-elements-wrapper a::before {
-  content: "";
-
-  position: absolute;
-  top: 40%;
-  left: 0;
-
-  width: 100%;
-  height: 8px;
-  background-color: rgba(94%, 77%, 18%, 1);
-}
-*/
-
 
 
 /* ------------------- Footer -------------- */
