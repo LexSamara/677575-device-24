@@ -488,32 +488,63 @@
       <section class="container-services">
         <h2 class="visually-hidden">Дополнительные услуги</h2>
         <div class="services-wrapper">
+
+          <input class="visually-hidden" type="radio" id="service-1" name="toggle2" checked>
+          <input class="visually-hidden" type="radio" id="service-2" name="toggle2">
+          <input class="visually-hidden" type="radio" id="service-3" name="toggle2">
+
           <ul class="services-list">
+
             <li class="services-item services-item1">
-              <button class="button">Доставка</button>
+              <label class="button" for="service-1">Доставка</label>
+              <div class="services-delivery-content" id="slider2-slide1">
+                <div class="service-delivery-wrapper">
+                  <div class="service-description">
+                    <h3 class="service-headline">Доставка</h3>
+                    <p class="service-tagline">Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
+                  </div>
+                  <div class="service-image1">
+                    <img src="img/delivery.svg" alt="Картинка сервиса доставки">
+                  </div>
+                </div>
+              </div>
             </li>
+
             <li class="services-item services-item2">
-              <button class="button">Гарантия</button>
+              <label class="button" for="service-2">Гарантия</label>
+              <div class="services-warranty-content" id="slider2-slide2">
+                <div class="service-warranty-wrapper">
+                  <div class="service-description">
+                    <h3 class="service-headline">Гарантия</h3>
+                    <p class="service-tagline">Если из-за возгорания купленного у нас товара у вас сгорит дом — не переживайте, мы выдадим вам новый.<br> Товар, не дом, конечно же.</p>
+                  </div>
+                  <div class="service-image2">
+                    <img src="img/warranty.svg" alt="Картинка сервиса гарантии">
+                  </div>
+                </div>
+              </div>
             </li>
+
             <li class="services-item services-item3">
-              <button class="button">Кредит</button>
+              <label class="button" for="service-3">Кредит</label>
+              <div class="services-credit-content" id="slider2-slide3">
+                <div class="service-credit-wrapper">
+                  <div class="service-description">
+                    <h3 class="service-headline">Кредит</h3>
+                    <p class="service-tagline">Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные<br> условия кредита. Выгодные для нашего банка, разумеется.</p>
+                  </div>
+                  <div class="service-image3">
+                    <img src="img/credit.svg" alt="Картинка сервиса кредита">
+                  </div>
+                </div>
+              </div>
             </li>
+
+
           </ul>
 
-          <div class="services-content">
-            <div class="service-delivery-wrapper current-service">
-              <div class="service-description">
-                <h3 class="service-headline">Доставка</h3>
-                <p class="service-tagline">Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
-              </div>
-              <div class="service-image">
-                <img src="img/delivery.svg" alt="Картинка сервиса доставки">
-              </div>
-            </div>
-            <div class="service-warranty-wrapper"></div>
-            <div class="service-credit-wrapper"></div>
-          </div>
         </div>
+
       </section>
 
       <section class="container-suppliers">
