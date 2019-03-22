@@ -1318,6 +1318,7 @@ a.supplier-vive:hover {
   width: 1160px;
   margin: 0 auto;
   padding: 0;
+  margin-bottom: 45px;
 
   /*outline: 1px solid blue;*/
 }
@@ -1328,7 +1329,6 @@ a.supplier-vive:hover {
   padding: 0px;
   margin-left: 60px;
   padding-top: 0px;
-  margin-bottom: 45px;
 
   font-family: "Open Sans", "Arial", sans-serif;
   font-weight: 300;
@@ -1385,11 +1385,10 @@ a.supplier-vive:hover {
   /*outline: 1px dotted green;*/
 }
 
-
 .catalog-wrapper {
   display: flex;
 
-  width: 1200px;
+  /*width: 1200px;*/
   margin: 0 auto;
   padding: 0px;
   min-height: 1287px;
@@ -1398,18 +1397,21 @@ a.supplier-vive:hover {
 }
 
 .filters {
-  width: 348px;
+  flex-grow: 2;
+  width: 468px;
   margin: 0px;
   padding: 0px;
+  /*margin-left: 60px;*/
 
-  /*outline: 1px dotted blue;*/
+  /*outline: 2px dotted blue;*/
 }
 
 .catalog {
+  flex-grow: 3;
   margin: 0px;
   padding: 0px;
 
-  /*outline: 1px dotted green;*/
+  /*outline: 2px dotted green;*/
 }
 
 .filters-title-name,
@@ -1425,14 +1427,14 @@ a.supplier-vive:hover {
 
 .filters-title-name {
   margin: 0;
-  padding: 23px 0 23px 25px;
+  padding-top: 25px;
+  padding-bottom: 21px;
 
-  text-align: center;
+  text-align: right;
+  padding-right: 175px;
 
   background-color: rgba(86%, 86%, 86%, 1);
 }
-
-
 
 /* Catalog-Filters */
 
@@ -1466,30 +1468,77 @@ a.supplier-vive:hover {
   margin-bottom: 70px;
 
   background-color: rgba(92%, 92%, 92%, 1);
+
   /*outline: 1px solid red;*/
+}
+
+.catalog-title-name {
+  width: 272px;
+  margin: 0;
+  padding: 25px 0 21px 23px;
+  text-align: center;
+  letter-spacing: 4px;
 }
 
 .catalog-title-list {
   display: flex;
+  align-items: center;
+  width: 400px;
   margin: 0;
   padding: 0;
 
   /*outline: 1px solid green;*/
 }
 
-.catalog-title-name {
-  width: 272px;
-  margin: 0;
-  padding: 23px 0 23px 23px;
-  text-align: center;
-  letter-spacing: 4px;
+.catalog-title-list a {
+  margin-right: 30px;
+
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 18px;
+  color: rgba(0, 0, 0, 1);
+
+  /*outline: 1px dotted gray;*/
 }
 
-.item-article span {
-  font-size: 16px;
-  line-height: 24px;
-  font-weight: 300;
+.catalog-title-list a.catalog-current-item {
+  font-weight: 700;
 }
+
+.title-sorting-list {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 160px;
+  margin: 0;
+  padding: 0;
+
+  /*outline: 1px dotted blue;*/
+}
+
+.title-sorting-item {
+  margin-left: 19px;
+}
+
+.title-sorting-item polyline {
+  fill: rgba(0, 0, 0, 0.3);
+}
+
+.sorting-item-active polyline {
+  fill: rgba(0, 0, 0, 1.0);
+}
+
+
+
+
+
+
+
+
+
+
+
 
 .catalog-list {
   display: flex;
@@ -1511,6 +1560,13 @@ a.supplier-vive:hover {
   margin-bottom: 45px;
 
   /*outline: 1px dotted green;*/
+}
+
+
+.item-article span {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 300;
 }
 
 .item-article h3 {

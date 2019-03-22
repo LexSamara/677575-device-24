@@ -140,6 +140,8 @@
         </ul>
       </div>
 
+
+
       <div class="catalog-wrapper">
         <section class="filters">
           <h2 class="visually-hidden">Фильтры товаров</h2>
@@ -213,8 +215,8 @@
           <div class="catalog-title-wrapper">
             <p class="catalog-title-name">Сортировка:</p>
             <ul class="catalog-title-list">
-              <li class="catalog-title-item catalog-current-item">
-                <a href="#">По цене</a>
+              <li class="catalog-title-item">
+                <a class="catalog-current-item" href="#">По цене</a>
               </li>
               <li class="catalog-title-item">
                 <a href="#">По типу</a>
@@ -223,14 +225,28 @@
                 <a href="#">По популярности</a>
               </li>
             </ul>
-            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-              width="11px" height="10px" viewBox="0 0 11 10" enable-background="new 0 0 11 10" xml:space="preserve">
-              <polygon fill="#231F20" points="5.5,0 0,10 11,10 "/>
-            </svg>
-            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-              width="11px" height="10px" viewBox="0 0 11 10" enable-background="new 0 0 11 10" xml:space="preserve">
-              <polyline fill="#231F20" points="5.5,10 0,0 11,0 "/>
-            </svg>
+            <ul class="title-sorting-list">
+              <li class="title-sorting-item item-ascending">
+                <button>
+                  <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                    width="11px" height="10px" viewBox="0 0 11 10" enable-background="new 0 0 11 10" xml:space="preserve">
+                    <polyline fill="#231F20" points="5.5,0 0,10 11,10 "/>
+                  </svg>
+                </button>
+              </li>
+              <li class="title-sorting-item item-descending sorting-item-active">
+                <button>
+                  <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                    width="11px" height="10px" viewBox="0 0 11 10" enable-background="new 0 0 11 10" xml:space="preserve">
+                    <polyline fill="#231F20" points="5.5,10 0,0 11,0 "/>
+                  </svg>
+                </button>
+              </li>
+            </ul>
+
+
+
+
           </div>
           <ul class="catalog-list">
             <li class="catalog-item">
