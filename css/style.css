@@ -90,13 +90,16 @@ button {
 
 
 .navigation {
-  margin: 0;
-  padding: 0;
-  width: 1200px;
-  margin: 0 auto;
+
   display: flex;
   flex-direction: column;
+  width: 1200px;
+  margin: 0;
+  padding: 0;
+  margin: 0 auto;
+
   align-items: center;
+
   /*outline: 2px solid red;*/
 }
 
@@ -225,7 +228,7 @@ button {
   /*min-height: 226px;*/
   margin: 0 auto;
   padding-top: 38px;
-  padding-bottom: 163px;
+
 
   font-weight: 700;
   font-size: 18px;
@@ -236,6 +239,14 @@ button {
 
   background-color: rgba(247, 226, 150, 1);
   /*outline: 2px solid blue;*/
+}
+
+.navigation-margin-index {
+  padding-bottom: 163px;
+}
+
+.navigation-margin-inner {
+  padding-bottom: 50px;
 }
 
 .navigation-services-list li {
@@ -286,15 +297,15 @@ button {
   fill: rgba(0, 0, 0, 0.3);
 }
 
-.inner-bottom-background {
+/*.inner-bottom-background {
   width: 1160px;
   margin: 0 auto;
   padding: 0;
   min-height: 50px;
 
   background-color: rgba(247, 226, 150, 1);
-  /*outline: 1px solid green;*/
-}
+  outline: 1px solid green;
+}*/
 
 .navigation-features-list .search,
 .navigation-features-list .profile-out {
@@ -1305,7 +1316,7 @@ a.supplier-vive:hover {
 
 .breadcrumbs-wrapper {
   width: 1160px;
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
 
   /*outline: 1px solid blue;*/
@@ -1315,7 +1326,7 @@ a.supplier-vive:hover {
   display: flex;
   margin: 0px;
   padding: 0px;
-  margin-left: 80px;
+  margin-left: 60px;
   padding-top: 0px;
   margin-bottom: 45px;
 
@@ -1324,26 +1335,62 @@ a.supplier-vive:hover {
   font-size: 14px;
   line-height: 24px;
   list-style: none;
+
+  /*outline: 1px solid red;*/
 }
 
 .breadcrumbs-item {
+  position: relative;
+
   margin: 0px;
   padding: 0px;
-  padding-right: 15px;
+  margin-right: 40px;
 
   /*outline: 1px solid green;*/
 }
 
-.breadcrumbs-list .item-main::after,
-.breadcrumbs-list .item-catalog::after {
-  content: ">";
+.breadcrumbs-item a{
+  color: rgba(0, 0, 0, 0.3);
 }
+
+.breadcrumbs-list a::after {
+  content: "";
+
+  position: absolute;
+  right: -23px;
+  top: 25%;
+
+  width: 10px;
+  height: 50%;
+
+  background-image: url(../img/nav-arrow.svg);
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+
+  /*outline: 1px dotted red;*/
+}
+
+.breadcrumbs-list li:last-child::after {
+  content: "";
+
+  position: absolute;
+
+  right: -23px;
+  top: 25%;
+
+  width: 10px;
+  height: 50%;
+  background-color: white;
+
+  /*outline: 1px dotted green;*/
+}
+
 
 .catalog-wrapper {
   display: flex;
 
   width: 1200px;
-  margin: 0px;
+  margin: 0 auto;
   padding: 0px;
   min-height: 1287px;
 
