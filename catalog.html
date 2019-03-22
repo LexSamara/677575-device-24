@@ -147,68 +147,90 @@
           <h2 class="visually-hidden">Фильтры товаров</h2>
           <!-- Форма -->
           <p class="filters-title-name">Фильтр:</p>
-          <form action="https://echo.htmlacademy.ru" class="filters-form" method="post">
-            <div class="filters-cost">
-              <label for="cost">Стоимость</label>
-              <input type="range" min="0" max="10000" id="cost">
-            </div>
-            <fieldset class="filters-color">
-              <legend>Цвет</legend>
-              <ul>
-                <li>
-                  <label class="filters-color-checkbox">
-                    <input type="checkbox" name="black" checked>
-                    Черный
-                  </label>
-                </li>
-                <li>
-                  <label class="filters-color-checkbox">
-                    <input type="checkbox" name="white">
-                    Белый
-                  </label>
-                </li>
-                <li>
-                  <label class="filters-color-checkbox">
-                    <input type="checkbox" name="blue" checked>
-                    Синий
-                  </label>
-                </li>
-                <li>
-                  <label class="filters-color-checkbox">
-                    <input type="checkbox" name="red" checked>
-                    Красный
-                  </label>
-                </li>
-                <li>
-                  <label class="filters-color-checkbox">
-                    <input type="checkbox" name="pink">
-                    Розовый
-                  </label>
-                </li>
-              </ul>
-            </fieldset>
-            <fieldset class="filters-bluetooth">
-              <legend>Bluetooth</legend>
-              <ul>
-                <li>
-                  <label class="filters-bluetooth-radio">
-                    <input type="radio" name="bluetooth" value="Yes" checked>
-                    Есть
-                  </label>
-                </li>
-                <li>
-                  <label class="filters-bluetooth-radio">
-                    <input type="radio" name="bluetooth" value="No">
-                    Нет
-                  </label>
-                </li>
-              </ul>
-            </fieldset>
-            <button class="filters-button-display" type="button">
-              Показать
-            </button>
-          </form>
+          <div class="filters-wrapper">
+            <form action="https://echo.htmlacademy.ru" class="filters-form" method="post">
+              <fieldset class="filters-price">
+                <legend>Стоимость</legend>
+                <div class="filters-cost">
+                  <div class="range-control">
+                    <div class="scale">
+                      <div class="bar"></div>
+                      <div class="toggle toggle-min"></div>
+                      <div class="toggle toggle-max"></div>
+                    </div>
+                  </div>
+                  <div class="price-control">
+                    <label class="min-price">от <input name="min-price" type="text" value="0"></label>
+                    <label class="max-price">до <input name="max-price" type="text" value="5000"></label>
+                  </div>
+
+                </div>
+              </fieldset>
+
+
+
+
+              <fieldset class="filters-color">
+                <legend>Цвет</legend>
+                <ul>
+                  <li>
+                    <label class="filters-color-checkbox">
+                      <input type="checkbox" name="black" checked>
+                      Черный
+                    </label>
+                  </li>
+                  <li>
+                    <label class="filters-color-checkbox">
+                      <input type="checkbox" name="white">
+                      Белый
+                    </label>
+                  </li>
+                  <li>
+                    <label class="filters-color-checkbox">
+                      <input type="checkbox" name="blue" checked>
+                      Синий
+                    </label>
+                  </li>
+                  <li>
+                    <label class="filters-color-checkbox">
+                      <input type="checkbox" name="red" checked>
+                      Красный
+                    </label>
+                  </li>
+                  <li>
+                    <label class="filters-color-checkbox">
+                      <input type="checkbox" name="pink">
+                      Розовый
+                    </label>
+                  </li>
+                </ul>
+              </fieldset>
+              <fieldset class="filters-bluetooth">
+                <legend>Bluetooth</legend>
+                <ul>
+                  <li>
+                    <label class="filters-bluetooth-radio">
+                      <input type="radio" name="bluetooth" value="Yes" checked>
+                      Есть
+                    </label>
+                  </li>
+                  <li>
+                    <label class="filters-bluetooth-radio">
+                      <input type="radio" name="bluetooth" value="No">
+                      Нет
+                    </label>
+                  </li>
+                </ul>
+              </fieldset>
+              <button class="filters-button-display" type="button">
+                Показать
+              </button>
+            </form>
+          </div>
         </section>
+
+
+
 
         <section class="catalog">
           <h2 class="visually-hidden">Селфи-палки</h2>
@@ -243,11 +265,8 @@
                 </button>
               </li>
             </ul>
-
-
-
-
           </div>
+
           <ul class="catalog-list">
             <li class="catalog-item">
               <article class="item-article">

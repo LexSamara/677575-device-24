@@ -1397,6 +1397,8 @@ a.supplier-vive:hover {
 }
 
 .filters {
+  display: flex;
+  flex-direction: column;
   flex-grow: 2;
   width: 468px;
   margin: 0px;
@@ -1438,7 +1440,7 @@ a.supplier-vive:hover {
 
 /* Catalog-Filters */
 
-.filters-cost label,
+.filters-price legend,
 .filters-color legend,
 .filters-bluetooth legend {
   font-size: 18px;
@@ -1458,6 +1460,165 @@ a.supplier-vive:hover {
   line-height: 40px;
   color: rgba(0, 0, 0, 1);
 }
+
+.filters-wrapper {
+  align-self: flex-end;
+  width: inherit;
+  margin: 0;
+  padding: 0;
+
+  background-color: rgba(93%, 93%, 93%, 1);
+  outline: 2px dotted green;
+}
+
+.filters-form .filters-price {
+  width: 200px;
+  margin: 0;
+  padding: 0;
+  margin-top: 83px;
+  margin-left: 200px;
+
+  border: none;
+
+  /*outline: 1px dotted red;*/
+}
+
+.filters-cost {
+
+  /*margin-top: 50px;*/
+}
+
+.filters-cost .range-control {
+  position: relative;
+
+  height: 45px;
+  padding-top: 35px;
+
+  /*outline: 1px dotted blue;*/
+}
+
+.range-control .scale {
+  height: 2px;
+
+  background: rgba(86%, 86%, 86%, 1);
+}
+
+.range-control .bar {
+  width: 60%;
+  height: 2px;
+
+  background: rgba(57%, 79%, 18%, 1);
+}
+
+.range-control .toggle {
+  position: absolute;
+  top: 25px;
+  left: 0;
+
+  width: 6px;
+  height: 6px;
+  /*padding: 0;*/
+
+  border: 10px solid #ffffff;
+  background-color: red;
+  box-shadow: 0 2px 1px 0 #cfcfcf;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.range-control .toggle-min {
+  left: -5px;
+}
+
+.range-control .toggle-max {
+  left: 105px;
+}
+
+.filters-cost .price-control {
+  margin: 0;
+  padding: 0;
+
+  font-size: 0;
+}
+
+.price-control label {
+  display: inline-block;
+  width: 45%;
+
+  margin: 0;
+  padding: 0;
+  padding-top: 5px;
+
+  font-size: 14px;
+  color: rgba(0,0,0,0.5);
+
+  /*outline: 1px solid red;*/
+
+}
+
+.price-control input {
+  width: 50px;
+
+  margin: 0;
+  padding: 0;
+  /*padding-left: 5px;*/
+
+  font-size: 14px;
+  text-align: left;
+  color: rgba(0,0,0,0.5);
+
+  border: none;
+  background: rgba(93%, 93%, 93%, 1);
+
+  /*outline: 1px solid blue;*/
+}
+
+
+
+/*
+.filters-price legend {
+  position: relative;
+  width: 200px;
+  margin-left: 200px;
+  margin-top: 83px;
+  margin-bottom: 80px;
+
+  outline: 1px dotted blue;
+}*/
+
+/*.filters-form .filters-price::before {
+  content: "";
+
+  position: absolute;
+  top: -12px;
+  left: 0px;
+
+  width: 200px;
+  height: 2px;
+
+  background-color: black;
+}
+
+.filters-form .filters-cost::after {
+  content: "";
+
+  position: absolute;
+  bottom: -80px;
+  left: 0px;
+
+  width: 200px;
+  height: 2px;
+
+  background-color: black;
+}*/
+
+
+
+
+
+
+
+
 
 /* Catalog-Items */
 
@@ -1529,26 +1690,16 @@ a.supplier-vive:hover {
   fill: rgba(0, 0, 0, 1.0);
 }
 
-
-
-
-
-
-
-
-
-
-
-
 .catalog-list {
   display: flex;
   flex-wrap: wrap;
   width: 854px;
   margin: 0;
   padding: 0;
-  padding-left: 54px;
+  padding-left: 50px;
+  padding-top: 2px;
 
-  /*outline: 1px dotted blue;*/
+  outline: 1px dotted blue;
 }
 
 .catalog-item {
@@ -1559,7 +1710,7 @@ a.supplier-vive:hover {
   margin-right: 20px;
   margin-bottom: 45px;
 
-  /*outline: 1px dotted green;*/
+  outline: 1px dotted green;
 }
 
 
