@@ -257,6 +257,7 @@ button {
 
   /*outline: 1px solid green;*/
 }
+
 .navigation-services-list .delivery-item {
   width: 160px;
   margin-left: 210px;
@@ -350,10 +351,11 @@ li.navigation-catalog-item:hover .container-catalog-menu {
 .container-catalog-menu {
   position: absolute;
   z-index: 1;
+  left: -60px;
 
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
-  width: 700px;
+  width: 1160px;
   background-color: rgba(247, 226, 150, 1);
 
   display: none;
@@ -383,6 +385,7 @@ li.navigation-catalog-item:hover .container-catalog-menu {
   margin: 0;
   padding: 0;
   margin-top: 20px;
+  margin-left: 60px;
 
   list-style: none;
   font-family: "Open Sans", "Arial", sans-serif;
