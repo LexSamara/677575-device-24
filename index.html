@@ -759,31 +759,24 @@
 
 <!-- -----------Modal------------ -->
 
-    <section class="modal modal-about-us">
+    <section class="modal">
       <h2 class="visually-hidden">Форма отправки письма</h2>
-      <button class="modal-close" type="button">
-        <img src="img/modal-close.svg" alt="Кнопка закрытия модального окна">
+      <button class="modal-button-close" type="button">
+        Закрыть
       </button>
       <form class="modal-form" action="https://echo.htmlacademy.ru" method="post">
-        <div class="modal-user-privat-data">
-          <div class="privat-data-name">
-            <label class="modal-form-user-name" for="about-us-user-name">Ваше имя:</label>
-            <input type="text" name="user-name" id="about-us-user-name" placeholder="Имя Фамилия">
-          </div>
-
-          <div class="privat-data-email">
-            <label class="user-email" for="about-us-user-email">Ваш e-mail:</label>
-            <input type="email" name="user-email" id="about-us-user-email" placeholder="email@example.com">
-          </div>
-        </div>
-
-        <div class="user-letter-content">
-          <label for="letter-content">Текст письма:</label>
-
-          <textarea name="letter-content" id="letter-content" rows="9" placeholder="В свободной форме"></textarea>
-
-        </div>
-
+        <label class="modal-form-user-name">
+          Ваше имя:
+          <input type="text" name="user-name" placeholder="Имя Фамилия">
+        </label>
+        <label class="user-email">
+          Ваш e-mail:
+          <input type="email" name="user-email" placeholder="email@example.com">
+        </label>
+        <label class="user-letter-content">
+          Текст письма:
+          <textarea name="letter-content" rows="5" placeholder="В свободной форме"></textarea>
+        </label>
         <button class="modal-form-button-send" type="button">
           Отправить
         </button>
