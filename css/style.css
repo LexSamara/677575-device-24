@@ -2029,8 +2029,8 @@ a.supplier-vive:hover {
 .container-info a.button,
 .container-contacts a.button,
 .services-item .button,
-.modal-form-button-send,
-.filters-button-display {
+.filters-button-display,
+.modal-form-button-send {
   position: relative;
   display: inline-block;
 
@@ -2069,7 +2069,8 @@ a.supplier-vive:hover {
 .container-info > a::before,
 .container-contacts > a::before,
 .services-item .button::before,
-.filters-button-display::before {
+.filters-button-display::before,
+.modal-form-button-send::before {
   content: "";
 
   position: absolute;
@@ -2089,7 +2090,8 @@ a.supplier-vive:hover {
 .container-info a:hover,
 .container-contacts a:hover,
 .services-item .button:hover,
-.filters-button-display:hover {
+.filters-button-display:hover,
+.modal-form-button-send:hover {
   content: "";
 
   background-color: rgba(94%, 77%, 18%, 1);
@@ -2485,7 +2487,41 @@ a.item-basket-ref:active path {
 /* Modal */
 
 .modal {
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 100;
+
   display: none;
+
+  box-shadow: 0 10px 20px 0 grey;
+
+  background-color: white;
+}
+
+.modal-about-us {
+
+  width: 960px;
+  min-height: 200px;
+
+  /*outline: 1px solid grey;*/
+}
+
+button.modal-close img {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+
+  opacity: 0.5;
+}
+
+button.modal-close img:hover {
+  opacity: 1;
+}
+
+button.modal-close img:active {
+  opacity: 0.2;
 }
 
 .modal-form label {
@@ -2496,9 +2532,104 @@ a.item-basket-ref:active path {
 
 .modal-form input,
 .modal-form textarea {
-  background-color: #e5e5e5;
+  background-color: #f2f2f2;
 }
 
-.modal-form placeholder {
-  color: #464646;
+.modal-form input:hover,
+.modal-form textarea:hover {
+  background-color: #ebebeb;
+}
+
+.modal-form input:focus,
+.modal-form textarea:focus {
+  background-color: white;
+  color: black;
+  outline: 3px solid #f7e296;
+}
+
+.modal-form input:invalid {
+  background-color: #f6dada;
+}
+
+.modal-user-privat-data {
+  display: flex;
+  justify-content: space-between;
+  width: 760px;
+  margin: 0;
+  margin-left: 100px;
+  margin-top: 96px;
+  padding: 0;
+
+  /*outline: 1px solid red;*/
+}
+
+.modal-user-privat-data .privat-data-name,
+.modal-user-privat-data .privat-data-email {
+  width: 360px;
+
+  /*outline: 1px solid blue;*/
+}
+
+.modal-form-user-name,
+.user-email,
+.privat-data-name input,
+.privat-data-email input {
+  display: block;
+  margin: 0;
+  padding: 0;
+  width: 360px;
+}
+
+.privat-data-name input,
+.privat-data-email input {
+  min-height: 50px;
+  margin-top: 5px;
+  margin-bottom: 30px;
+  padding-left: 20px;
+
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 18px;
+
+  border: none;
+}
+
+.user-letter-content {
+  display: block;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 40px;
+
+}
+
+.user-letter-content label,
+.user-letter-content textarea {
+  width: 760px;
+  margin-left: 100px;
+
+}
+
+.user-letter-content textarea {
+  padding-left: 20px;
+  padding-top: 15px;
+
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 18px;
+
+  border: none;
+}
+
+
+.modal-form-button-send {
+  width: 200px;
+  height: 40px;
+  margin-left: 100px;
+  margin-bottom: 80px;
+
+  /*outline: 1px solid blue;*/
 }
