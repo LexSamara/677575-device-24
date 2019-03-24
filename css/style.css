@@ -838,7 +838,7 @@ li.navigation-catalog-item:hover .container-catalog-menu {
   margin: 0;
   padding: 0;
   margin: 0 auto;
-  margin-bottom: 92px;
+  margin-bottom: 94px;
 
   background-color: rgba(229, 229, 229, 1);
 
@@ -1072,9 +1072,6 @@ li.navigation-catalog-item:hover .container-catalog-menu {
   background-color: rgba(0%, 0%, 0%, 1);
 }
 
-
-
-
 /* ----------- container-suppliers ------------ */
 
 .container-suppliers li {
@@ -1251,6 +1248,11 @@ a.supplier-vive:hover {
   /*outline: 1px solid green;*/
 }
 
+.container-contacts .map-link {
+  margin: 0;
+  padding: 0;
+}
+
 .info-wrapper .container-contacts {
   width: 560px;
   margin: 0;
@@ -1278,12 +1280,14 @@ a.supplier-vive:hover {
   /*min-height: 202px;*/
   margin: 0;
   padding: 0;
-  margin-bottom: 59px;
+  margin-bottom: 60px;
 
-  outline: 1px solid green;
+  /*outline: 1px solid green;*/
 }
 
-
+.container-contacts .write-us-link {
+  margin-bottom: 7px;
+}
 
 
 
@@ -1532,12 +1536,12 @@ a.supplier-vive:hover {
   left: 0;
 
   display: block;
-  width: 3px;
-  height: 3px;
-  padding: 3;
+  width: 1px;
+  height: 1px;
+  padding: 2px;
 
-  background-color: red;
-  /*box-shadow: 0 2px 1px 0 #cfcfcf;*/
+  background-color: #ababab;
+  box-shadow: 0 2px 1px 0 #cfcfcf;
   border: 8px solid #ffffff;
   border-radius: 50%;
   cursor: pointer;
@@ -1548,7 +1552,7 @@ a.supplier-vive:hover {
 }
 
 .range-control .toggle-max {
-  left: 105px;
+  left: 107px;
 }
 
 .filters-cost .price-control {
@@ -1568,11 +1572,12 @@ a.supplier-vive:hover {
   margin-bottom: 40px;
 
   font-size: 14px;
-  color: rgba(0,0,0,0.5);
+  color: rgba(0,0,0,0.3);
 
   /*outline: 1px solid red;*/
-
 }
+
+
 
 .price-control input {
   width: 50px;
@@ -1583,7 +1588,7 @@ a.supplier-vive:hover {
 
   font-size: 14px;
   text-align: left;
-  color: rgba(0,0,0,0.5);
+  color: rgba(0,0,0,0.3);
 
   border: none;
   background: rgba(93%, 93%, 93%, 1);
@@ -2090,7 +2095,7 @@ a.supplier-vive:hover {
 
 .interactive-elements-wrapper a:hover,
 .container-info a:hover,
-.container-contacts a:hover,
+.container-contacts > a:hover,
 .services-item .button:hover,
 .filters-button-display:hover,
 .modal-form-button-send:hover {
