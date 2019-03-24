@@ -1274,11 +1274,13 @@ a.supplier-vive:hover {
 }
 
 .container-contacts p:nth-of-type(2) {
+  display: block;
+  /*min-height: 202px;*/
   margin: 0;
   padding: 0;
   margin-bottom: 59px;
 
-  /*outline: 1px solid green;*/
+  outline: 1px solid green;
 }
 
 
@@ -2493,20 +2495,25 @@ a.item-basket-ref:active path {
   transform: translate(-50%, -50%);
   z-index: 100;
 
-  display: none;
-
   box-shadow: 0 10px 20px 0 grey;
 
   background-color: white;
 }
 
-.modal-about-us {
+.modal-write-us {
+
+  display: none;
 
   width: 960px;
   min-height: 200px;
 
   /*outline: 1px solid grey;*/
 }
+
+.modal-write-us-show {
+  display: block;
+}
+
 
 button.modal-close img {
   position: absolute;
@@ -2632,4 +2639,14 @@ button.modal-close img:active {
   margin-bottom: 80px;
 
   /*outline: 1px solid blue;*/
+}
+
+.modal-map {
+  display: none;
+
+  width: 960px;
+}
+
+.modal-map-show {
+  display: block;
 }
