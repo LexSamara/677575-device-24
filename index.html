@@ -8,7 +8,6 @@
   </head>
   <body>
 
-<!-- ------------Header------------- -->
     <header class="header">
 
       <nav class="navigation">
@@ -24,19 +23,23 @@
 
           <p class="visually-hidden">DEVICE</p>
         </a>
-
         <ul class="navigation-features-list">
           <li class="navigation-features-item search-item">
-            <a href="search.html" class="search">
-              <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                width="16px" height="16px" viewBox="0 0 16 16" enable-background="new 0 0 16 16" xml:space="preserve">
-                <path d="M15.7,14.3l-3.104-3.104C13.473,10.023,14,8.576,14,7c0-3.866-3.134-7-7-7S0,3.134,0,7s3.134,7,7,7
-                c1.576,0,3.023-0.527,4.193-1.404L14.3,15.7c0.185,0.184,0.38,0.3,0.7,0.3c0.553,0,1-0.447,1-1C16,14.781,15.945,14.546,15.7,14.3z
-                M2,7c0-2.762,2.238-5,5-5s5,2.238,5,5s-2.238,5-5,5S2,9.762,2,7z"/>
-              </svg>
-              Поиск по сайту
-            </a>
+            <form class="search-form" action="https://echo.htmlacademy.ru" method="post">
+              <label for="search-field"><svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                  width="16px" height="16px" viewBox="0 0 16 16" enable-background="new 0 0 16 16" xml:space="preserve">
+                  <path d="M15.7,14.3l-3.104-3.104C13.473,10.023,14,8.576,14,7c0-3.866-3.134-7-7-7S0,3.134,0,7s3.134,7,7,7
+                  c1.576,0,3.023-0.527,4.193-1.404L14.3,15.7c0.185,0.184,0.38,0.3,0.7,0.3c0.553,0,1-0.447,1-1C16,14.781,15.945,14.546,15.7,14.3z
+                  M2,7c0-2.762,2.238-5,5-5s5,2.238,5,5s-2.238,5-5,5S2,9.762,2,7z"/>
+                </svg>
+              </label>
+              <input class="search-field" type="text" id="search-field" placeholder="Поиск по сайту" name="search">
+              <div class="search-button-wrapper">
+                <input class="search-button" type="submit" value="Найти">
+              </div>
+            </form>
           </li>
+
           <li class="navigation-features-item profile-in-item">
             <a href="profile.html" class="profile-in">
               <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
@@ -135,7 +138,6 @@
     </header>
 
 
-<!-- ----------Main----------- -->
     <main class="container">
       <h1 class="visually-hidden">Интернет-магазин гаджетов «Девайс»</h1>
 
@@ -147,18 +149,16 @@
 
         <div class="slider-wrapper">
           <h2 class="visually-hidden">TOP-3 товары</h2>
-
           <div class="slider-controls">
             <label for="product-1"></label>
             <label for="product-2"></label>
             <label for="product-3"></label>
           </div>
-
           <ul class="slider-list">
             <li class="slider-item" id="slide1">
               <div class="slider-wrapper">
                 <div class="slide-pic slide1-pic">
-                  <img src="img/slider-1.png" width="384" alt="Самая длинная палка для селфи">
+                  <img src="img/slider-1.png" height="486" width="384" alt="Самая длинная палка для селфи">
                 </div>
                 <section class="slide-details">
                   <h3 class="visually-hidden">Самая длинная палка для селфи</h3>
@@ -189,7 +189,7 @@
             <li class="slider-item" id="slide2">
               <div class="slider-wrapper">
                 <div class="slide-pic slide2-pic">
-                  <img src="img/slider-2.png" width="345" alt="Мотивирующий фитнес-браслет ">
+                  <img src="img/slider-2.png" height="485" width="345" alt="Мотивирующий фитнес-браслет ">
                 </div>
                 <section class="slide-details">
                   <h3 class="visually-hidden">Мотивирующие фитнес-браслеты</h3>
@@ -216,7 +216,7 @@
             <li class="slider-item" id="slide3">
               <div class="slider-wrapper">
                 <div class="slide-pic slide3-pic">
-                  <img src="img/slider-3.png" width="526" alt="Квадрокоптер ">
+                  <img src="img/slider-3.png" height="334" width="526" alt="Квадрокоптер ">
                 </div>
                 <section class="slide-details">
                   <h3 class="visually-hidden">Квадрокоптер</h3>
@@ -488,13 +488,10 @@
       <section class="container-services">
         <h2 class="visually-hidden">Дополнительные услуги</h2>
         <div class="services-wrapper">
-
           <input class="visually-hidden" type="radio" id="service-1" name="toggle2" checked>
           <input class="visually-hidden" type="radio" id="service-2" name="toggle2">
           <input class="visually-hidden" type="radio" id="service-3" name="toggle2">
-
           <ul class="services-list">
-
             <li class="services-item services-item1">
               <label class="button" for="service-1">Доставка</label>
               <div class="services-delivery-content" id="slider2-slide1">
@@ -504,12 +501,11 @@
                     <p class="service-tagline">Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
                   </div>
                   <div class="service-image1">
-                    <img src="img/delivery.svg" width="136" alt="Картинка сервиса доставки">
+                    <img src="img/delivery.svg" height="164" width="" alt="Картинка сервиса доставки">
                   </div>
                 </div>
               </div>
             </li>
-
             <li class="services-item services-item2">
               <label class="button" for="service-2">Гарантия</label>
               <div class="services-warranty-content" id="slider2-slide2">
@@ -519,12 +515,11 @@
                     <p class="service-tagline">Если из-за возгорания купленного у нас товара у вас сгорит дом — не переживайте, мы выдадим вам новый.<br> Товар, не дом, конечно же.</p>
                   </div>
                   <div class="service-image2">
-                    <img src="img/warranty.svg" width="171" alt="Картинка сервиса гарантии">
+                    <img src="img/warranty.svg" height="194" width="171" alt="Картинка сервиса гарантии">
                   </div>
                 </div>
               </div>
             </li>
-
             <li class="services-item services-item3">
               <label class="button" for="service-3">Кредит</label>
               <div class="services-credit-content" id="slider2-slide3">
@@ -534,17 +529,13 @@
                     <p class="service-tagline">Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные<br> условия кредита. Выгодные для нашего банка, разумеется.</p>
                   </div>
                   <div class="service-image3">
-                    <img src="img/credit.svg" width="156" alt="Картинка сервиса кредита">
+                    <img src="img/credit.svg" height="186" width="156" alt="Картинка сервиса кредита">
                   </div>
                 </div>
               </div>
             </li>
-
-
           </ul>
-
         </div>
-
       </section>
 
       <section class="container-suppliers">
@@ -552,22 +543,30 @@
         <ul class="suppliers-list">
           <li class="suppliers-item">
             <a class="supplier-dji" href="https://www.dji.com/ru">
-              <img src="img/logo-1.png" width="260" alt="Сайт поставщика DJI">
+              <div class="image-wrap">
+                <img src="img/logo-1-color.jpg" height="100" width="260" alt="Сайт поставщика DJI">
+              </div>
             </a>
           </li>
           <li class="suppliers-item">
             <a class="supplier-sp" href="http://www.sp-gadgets.com/">
-              <img src="img/logo-2.png" width="260" alt="Сайт поставщика SP-GADGETS">
+              <div class="image-wrap">
+                <img src="img/logo-2-color.jpg" height="100" width="260" alt="Сайт поставщика SP-GADGETS">
+              </div>
             </a>
           </li>
           <li class="suppliers-item">
             <a class="supplier-gopro" href="https://gopro.com">
-              <img src="img/logo-3.png" width="260" alt="Сайт поставщика GoPro">
+              <div class="image-wrap">
+                <img src="img/logo-3-color.jpg" height="100" width="260" alt="Сайт поставщика GoPro">
+              </div>
             </a>
           </li>
           <li class="suppliers-item">
             <a class="supplier-vive" href="https://www.vive.com/ru/">
-              <img src="img/logo-4.png" width="260" alt="Сайт поставщика Vive">
+              <div class="image-wrap">
+                <img src="img/logo-4-color.jpg" height="100" width="260" alt="Сайт поставщика Vive">
+              </div>
             </a>
           </li>
         </ul>
@@ -593,13 +592,11 @@
           <p>Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.</p>
           <p>
             <a class="map-link" href="#">
-              <img src="img/map.jpg" width="560" alt="Сервис карт">
-              <!-- map popup  -->
+              <img src="img/map.jpg" height="222" width="560" alt="Сервис карт">
             </a>
           </p>
           <a class="button write-us-link" href="#" >
             Напишите нам
-            <!-- write-us popup -->
           </a>
         </section>
       </div>
@@ -607,10 +604,7 @@
     </main>
 
 
-<!-- ---------------Footer--------------- -->
-
     <footer class="footer">
-
       <div class="footer-wrapper-top">
         <div class="footer-logo">
           <a class="footer-logo-ref" href="#">
@@ -749,20 +743,10 @@
     </footer>
 
 
-
-
-
-
-
-
-
-
-<!-- -----------Modal------------ -->
-
     <section class="modal modal-write-us">
       <h2 class="visually-hidden">Форма отправки письма</h2>
       <button class="modal-close" type="button">
-        <img src="img/modal-close.svg" width="55" alt="Кнопка закрытия модального окна">
+        <img src="img/modal-close.svg" height="55" width="55" alt="Кнопка закрытия модального окна">
       </button>
       <form class="modal-form" action="https://echo.htmlacademy.ru" method="post">
         <div class="modal-user-privat-data">
@@ -770,21 +754,16 @@
             <label class="modal-form-user-name" for="write-us-user-name">Ваше имя:</label>
             <input type="text" name="user-name" id="write-us-user-name" placeholder="Имя Фамилия">
           </div>
-
           <div class="privat-data-email">
             <label class="user-email" for="write-us-user-email">Ваш e-mail:</label>
             <input type="email" name="user-email" id="write-us-user-email" placeholder="email@example.com">
           </div>
         </div>
-
         <div class="user-letter-content">
           <label for="letter-content">Текст письма:</label>
-
           <textarea name="letter-content" id="letter-content" rows="9" placeholder="В свободной форме"></textarea>
-
         </div>
-
-        <button class="modal-form-button-send" type="button">
+        <button class="modal-form-button-send" type="submit">
           Отправить
         </button>
       </form>
@@ -793,9 +772,8 @@
     <section class="modal modal-map">
       <h2 class="visually-hidden">Интерактивная карта</h2>
       <button class="modal-close" type="button">
-        <img src="img/modal-close.svg" width="55" alt="Кнопка закрытия модального окна">
+        <img src="img/modal-close.svg" height="55" width="55" alt="Кнопка закрытия модального окна">
       </button>
-
       <div class="modal-map-wrapper">
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2249.1123749473677!2d37.527429316086916!3d55.68703400452979!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54cf65f5c8955%3A0x694710ccd55501e!2z0YPQuy4g0KHRgtGA0L7QuNGC0LXQu9C10LksIDE1LCDQnNC-0YHQutCy0LAsIDExOTMxMQ!5e0!3m2!1sru!2sru!4v1553439229220" width="960" height="450" style="border:0" allowfullscreen>
         </iframe>
