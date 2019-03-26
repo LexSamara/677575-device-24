@@ -1935,6 +1935,74 @@ a.supplier-vive:hover {
   /*outline: 1px solid red;*/
 }
 
+.item-article {
+  position: relative;
+}
+
+.item-article .flag {
+  position: absolute;
+  top: 30px;
+  right: 30px;
+
+  width: 62px;
+  height: 62px;
+  padding: 1px;
+  background-image: url(../img/Shape-2.png);
+  background-repeat: no-repeat;
+}
+
+.flag span {
+  display: inline-block;
+  position: relative;
+  top: 18px;
+  left: 13px;
+
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+  line-height: 24px;
+  text-transform: uppercase;
+  color: rgba(0,0,0,0.3);
+}
+
+.item-article > a {
+  position: relative;
+  /*display: block;*/
+}
+
+.action {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+
+  display: none;
+  width: 360px;
+  height: 380px;
+
+  /*outline: 1px solid red;*/
+}
+
+.action .buy {
+  position: relative;
+  top: 50%;
+  left: 50%;
+
+  width: 200px;
+  height: 40px;
+
+  transform: translate(-50%, -50%);
+
+  /*outline: 1px dotted green;*/
+}
+
+.item-article > a:hover + .action {
+  display: block;
+}
+
+/*.item-article > a:hover img {
+  opacity: 0.3;
+}*/
+
 .item-article-description {
   display: flex;
   justify-content: space-between;
@@ -1965,6 +2033,11 @@ a.supplier-vive:hover {
   /*outline: 1px dotted blue;*/
 }
 
+
+
+
+
+
 .catalog-pagination-list {
   position: relative;
   left: 70px;
@@ -1992,18 +2065,22 @@ a.supplier-vive:hover {
   text-transform: uppercase;
   letter-spacing: 3.5px;
 
+}
+
+.catalog-pagination-item > a {
+  display: inline-block;
+
   /*outline: 1px dotted green;*/
 }
 
-.catalog-pagination-list a {
-  display: inline-block;
+.item-backward > a {
+  padding-top: 23px;
+  padding-bottom: 23px;
+  padding-left: 30px;
+  padding-right: 30px;
 }
 
-.catalog-pagination-list > li:first-child {
-  padding: 23px 30px;
-}
-
-.catalog-pagination-list > li:last-child {
+.item-forward > a {
   padding: 23px 28px;
 }
 
@@ -2017,14 +2094,26 @@ a.supplier-vive:hover {
   margin-top: 3px;
 }
 
-.catalog-pagination-list > li:first-child:hover,
-.catalog-pagination-list > li:last-child:hover {
+.pagination-list-numbers a {
+  color: rgba(0,0,0,0.3);
+}
+
+.pagination-list-numbers a:hover {
+  color: rgba(0,0,0,0.5);
+}
+
+.pagination-list-numbers a:active {
+  color: rgba(0,0,0,1);
+}
+
+.item-backward > a:hover,
+.item-forward > a:hover {
   background-color: #d9d9d9;
 }
 
-.catalog-pagination-list > li:first-child:active,
-.catalog-pagination-list > li:last-child:active {
-  color: rgba(0,0,0,0.5);
+.item-backward > a:active,
+.item-forward > a:active {
+  color: rgba(0,0,0,0.3);
 }
 
 
@@ -2037,7 +2126,8 @@ a.supplier-vive:hover {
 .container-contacts a.button,
 .services-item .button,
 .filters-button-display,
-.modal-form-button-send {
+.modal-form-button-send,
+.action .buy {
   position: relative;
   display: inline-block;
 
@@ -2077,7 +2167,8 @@ a.supplier-vive:hover {
 .container-contacts > a::before,
 .services-item .button::before,
 .filters-button-display::before,
-.modal-form-button-send::before {
+.modal-form-button-send::before,
+.action .buy::before {
   content: "";
 
   position: absolute;
@@ -2098,7 +2189,8 @@ a.supplier-vive:hover {
 .container-contacts > a:hover,
 .services-item .button:hover,
 .filters-button-display:hover,
-.modal-form-button-send:hover {
+.modal-form-button-send:hover,
+.action .buy:hover {
   content: "";
 
   background-color: rgba(94%, 77%, 18%, 1);
@@ -2107,8 +2199,9 @@ a.supplier-vive:hover {
 
 .interactive-elements-wrapper a:active,
 .container-info a:active,
-.container-contacts a:active,
-.filters-button-display:active {
+.container-contacts > a:active,
+.filters-button-display:active,
+.action .buy:active {
   content: "";
 
   background-color: rgba(94%, 77%, 18%, 1);
