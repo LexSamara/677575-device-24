@@ -2016,7 +2016,6 @@ li.navigation-catalog-item:hover .container-catalog-menu {
   position: relative;
 }
 
-
 .new-item::after {
   content: "New";
 
@@ -2044,7 +2043,7 @@ li.navigation-catalog-item:hover .container-catalog-menu {
   /*outline: 1px solid red;*/
 }
 
-.item-article > a {
+.item-article > .img-item {
   position: relative;
   display: block;
 }
@@ -2098,12 +2097,12 @@ li.navigation-catalog-item:hover .container-catalog-menu {
   color: rgba(0, 0, 0, 0.3);
 }
 
-a.img-item:hover .action {
+.img-item:hover .action {
   display: block;
   z-index: 100;
 }
 
-.item-article > a:hover img {
+.item-article > .img-item:hover img {
   opacity: 0.3;
 }
 
