@@ -1967,41 +1967,66 @@ a.supplier-vive:hover {
 
 .item-article > a {
   position: relative;
-  /*display: block;*/
+  display: block;
 }
 
 .action {
   position: absolute;
-  top: 0px;
-  left: 0px;
+  top: 50%;
+  left: 50%;
 
   display: none;
-  width: 360px;
-  height: 380px;
 
   /*outline: 1px solid red;*/
 }
 
 .action .buy {
   position: relative;
-  top: 50%;
-  left: 50%;
 
   width: 200px;
   height: 40px;
 
   transform: translate(-50%, -50%);
 
+  /*outline: 1px dotsted green;*/
+}
+
+.action .bookmark {
+  position: absolute;
+  top: 40px;
+
+/*  width: 200px;
+  height: 20px;*/
+  margin: 0;
+  padding: 0;
+
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-weight: 300;
+  font-size: 13px;
+  line-height: 36px;
+  color: rgba(0, 0, 0, 0.5);
+
+  transform: translate(-50%, -50%);
+
   /*outline: 1px dotted green;*/
 }
 
-.item-article > a:hover + .action {
-  display: block;
+.action .bookmark:hover {
+  color: rgba(0, 0, 0, 1);
 }
 
-/*.item-article > a:hover img {
+.action .bookmark:active {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+a.img-item:hover .action {
+  display: block;
+  z-index: 100;
+}
+
+.item-article > a:hover img {
   opacity: 0.3;
-}*/
+}
 
 .item-article-description {
   display: flex;
