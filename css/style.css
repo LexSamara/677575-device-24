@@ -77,15 +77,6 @@ a {
   text-decoration: none;
 }
 
-button {
-  padding: 0;
-  border: none;
-  font: inherit;
-  color: inherit;
-  background-color: transparent;
-  cursor: pointer;
-}
-
 .navigation {
 
   display: flex;
@@ -613,6 +604,7 @@ li.navigation-catalog-item:hover .container-catalog-menu {
   position: relative;
 
   width: 560px;
+  min-height: 482px;
   margin: 0;
   padding: 0;
   margin-right: 20px;
@@ -1897,9 +1889,16 @@ li.navigation-catalog-item:hover .container-catalog-menu {
 }
 
 .filters-button-display {
+
   width: 200px;
   height: 40px;
   margin-left: 200px;
+  padding: 0;
+  border: none;
+  font: inherit;
+  color: inherit;
+  background-color: transparent;
+  cursor: pointer;
 
   /*outline: 1px dotted green;*/
 }
@@ -1980,6 +1979,17 @@ li.navigation-catalog-item:hover .container-catalog-menu {
   fill: rgba(0, 0, 0, 1.0);
 }
 
+.title-sorting-item button {
+  padding: 0;
+  border: none;
+  font: inherit;
+  color: inherit;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+
+
 .title-sorting-item button:hover polyline {
   fill: rgba(0, 0, 0, 0.7);
 }
@@ -2058,11 +2068,19 @@ li.navigation-catalog-item:hover .container-catalog-menu {
   /*outline: 1px solid red;*/
 }
 
+
 .action .buy {
   position: relative;
 
   width: 200px;
   height: 40px;
+
+  padding: 0;
+  border: none;
+  font: inherit;
+  color: inherit;
+  background-color: transparent;
+  cursor: pointer;
 
   transform: translate(-50%, -50%);
 
@@ -2070,13 +2088,20 @@ li.navigation-catalog-item:hover .container-catalog-menu {
 }
 
 .action .bookmark {
-  position: absolute;
-  top: 40px;
+  position: relative;
+  /*top: 40px;*/
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
 
 /*  width: 200px;
   height: 20px;*/
   margin: 0;
   padding: 0;
+
+  padding: 0;
+  border: none;
+  font: inherit;
 
   font-family: "Open Sans", "Arial", sans-serif;
   font-weight: 300;
@@ -2084,8 +2109,9 @@ li.navigation-catalog-item:hover .container-catalog-menu {
   line-height: 36px;
   color: rgba(0, 0, 0, 0.5);
 
-  transform: translate(-50%, -50%);
+  background-color: transparent;
 
+  cursor: pointer;
   /*outline: 1px dotted green;*/
 }
 
@@ -2323,6 +2349,7 @@ li.navigation-catalog-item:hover .container-catalog-menu {
 .footer {
   width: auto;
   padding: 0 10px;
+  min-width: 1200px;
   min-height: 323px;
   margin: 0 auto;
   padding-top: 65px;
